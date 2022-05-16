@@ -1,1 +1,1 @@
-# DoctoSpace - Site de voyages thérapeutiques sur tonalité decalée
+# DoctoSpace - Votre site de voyages thérapeutiques interplanétaire
