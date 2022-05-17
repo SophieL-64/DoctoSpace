@@ -20,10 +20,10 @@
 function toggle() {
     let elm = document.getElementById('sousMenu');
 
-    if(elm.className === 'navSousItemdrop__active'){
+    if(elm.className === 'navSousItemdrop_active'){
         elm.className = 'navSousItemdrop';
     } else {
-        elm.className = 'navSousItemdrop__active';
+        elm.className = 'navSousItemdrop_active';
     }
 
 }

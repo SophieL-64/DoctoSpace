@@ -56,9 +56,6 @@ label>svg{
 }
 
 .navSousItemdrop_active{
-    position:absolute;
-    /* top:9rem; */
-    left:1rem;
     box-shadow: 0 0 10px var(--clr_gray2);
     background-color: white;
     border-radius: 4px;
@@ -67,7 +64,7 @@ label>svg{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 200ms ease-in-out;
 }
 
@@ -84,7 +81,7 @@ li{
     background-color: rgb(179, 221, 25);
 }
 li:first-child{
-    margin-left: 4px;
+    /* margin-left: 4px; */
     display: block;
 }
 a{
@@ -92,6 +89,7 @@ a{
     color: inherit;
     font-size: 1.2rem;
 }
+
 a>svg{
     width: 1.5rem;
     fill:var(--clr_gray2)
@@ -101,11 +99,11 @@ a>svg{
     display: block;
 }
 
-#navCheckbox:checked ~ label.navToggle.close{
+#navCheckbox:checked ~ label.navToggle .close{
     display: block;
 }
 
-#navCheckbox:checked ~ label.navToggle.menu{
+#navCheckbox:checked ~ label.navToggle .menu{
     display: none;
 }
 
@@ -123,5 +121,13 @@ a>svg{
     .navSousItemdrop{
         top: 3rem;
         left:18rem;
+    }
+    .destination{
+        position: relative;
+    }
+    .navSousItemdrop_active{
+        position: absolute;
+        top:4rem;
+        
     }
 }
