@@ -63,6 +63,17 @@ section {
 .text-italic {
   font-style: italic;
 }
+
+.inactif{
+  display:none;
+    transition: 0.5s 0s ease-in-out;
+}
+.actif {
+  display: initial;
+  transition: 0.5s 0s ease-in-out;
+
+}
+
 /******FIN GENERIQUE***********/
 
 
