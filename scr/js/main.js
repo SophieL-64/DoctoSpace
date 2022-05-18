@@ -21,3 +21,19 @@ function toggle() {
 
 //////////tesmoniale/////////////////////////
 
+// Scroll haut de page///////////////////////////////////////
+window.onscroll = function () {
+    scrollFunction();
+  };
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById("haut").style.display = "block";
+    } else {
+      document.getElementById("haut").style.display = "none";
+    }
+  }
+  
+  function retourHaut() {
+    window.scrollTo(0, 0);
+  }
