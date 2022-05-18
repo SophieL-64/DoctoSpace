@@ -11,7 +11,6 @@
       media="screen and (min-width:390px)"
       href="style.desktop.css"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -22,42 +21,19 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="script-testimonials.js" defer></script>
+    <script src="./index.js" defer></script>
   </head>
+
   <body>
     <aside>
       <section class="testimonials">
         <h2>Testimonials</h2>
-        <div class="flex-container">
-          <article class="testimonial" id="test">
+        <div class="flex-container" id="testimonials-articles">
+          <article class="testimonial actif" id="testimonial-1">
             <div class="testimonial-text">
               <p>
                 <i class="fas fa-quote-left"></i>
-                #1 Depuis que j’ai fait appel à DoctoSpace pour mon problème de
-                peau,c’est bien simple, mon mari ne me reconnaît plus.
-                <i class="fas fa-quote-left"></i>
-              </p>
-              <div class="testimonial-person">
-                <div class="testimonial-avatar"></div>
-                <p class="testimonial-name">Victor, 30 ans</p>
-              </div>
-            </div>
-
-            <div class="testimonials-flex-img">
-              <div class="testimonials-img flex-middle-text text-opacity-8">
-                Avant
-              </div>
-              <div class="testimonials-img flex-middle-text text-opacity-10">
-                <div>Apres</div>
-              </div>
-            </div>
-          </article>
-
-          <article class="testimonial">
-            <div class="testimonial-text">
-              <p>
-                <i class="fas fa-quote-left"></i>
-                #2 Depuis que j’ai fait appel à DoctoSpace pour mon problème de
+                # 1 Depuis que j’ai fait appel à DoctoSpace pour mon problème de
                 peau,c’est bien simple, mon mari ne me reconnaît plus.
                 <i class="fas fa-quote-left"></i>
               </p>
@@ -76,17 +52,37 @@
               </div>
             </div>
           </article>
-          <article class="testimonial">
+
+          <article class="testimonial inactif" id="testimonial-2">
             <div class="testimonial-text">
               <p>
                 <i class="fas fa-quote-left"></i>
-                #3 Depuis que j’ai fait appel à DoctoSpace pour mon problème de
-                peau,c’est bien simple, mon mari ne me reconnaît plus.
+                # 2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, nemo!
                 <i class="fas fa-quote-left"></i>
               </p>
               <div class="testimonial-person">
                 <div class="testimonial-avatar"></div>
                 <p class="testimonial-name">Florence, 30 ans</p>
+              </div>
+              <div class="testimonials-img flex-middle-text text-opacity-10">
+                <div>Apres</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial inactif" id="testimonial-3">
+            <div class="testimonial-text">
+              <p>
+                <i class="fas fa-quote-left"></i>
+                # 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                iste nesciunt laudantium neque, eum voluptatum vel cumque porro,
+                aliquid perferendis qui incidunt, dolor earum deleniti corporis
+                ipsa nihil placeat nostrum.
+                <i class="fas fa-quote-left"></i>
+              </p>
+              <div class="testimonial-person">
+                <div class="testimonial-avatar"></div>
+                <p class="testimonial-name">jean, 30 ans</p>
               </div>
             </div>
 
