@@ -22,7 +22,8 @@ function permute(i){
 
  
     if (i==1){
-    article1.className="actif"
+    article1.className.toggle="actif";
+    console.log('test----',article1.className.toggle)
     article2.className="inactif"
     article3.className="inactif"
         console.log("cas: ",1)
@@ -41,7 +42,7 @@ function permute(i){
             console.log("cas: ",3)
     }
 
-    console.log(i,article1,article2,article3)
+    // console.log(i,article1,article2,article3)
 }
 
 
