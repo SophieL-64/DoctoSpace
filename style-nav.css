@@ -69,7 +69,7 @@ label>svg{
 }
 
 
-li{
+.nav-li{
     list-style: none;
     padding: 0.5rem 1rem;
     display: none;
@@ -80,11 +80,14 @@ li{
 .navMenu li:focus{
     background-color: rgb(179, 221, 25);
 }
-li:first-child{
+.navSousMenu {
+    list-style-type: none;
+}
+.nav-li:first-child{
     /* margin-left: 4px; */
     display: block;
 }
-a{
+.nav-link e.destination{
     text-decoration: none;
     color: inherit;
     font-size: 1.2rem;
@@ -107,6 +110,7 @@ a>svg{
     display: none;
 }
 
+
 @media screen and (min-width:560px) {
 
     .nav .navToggle{
@@ -115,19 +119,19 @@ a>svg{
     .nav .navMenu{
         flex-direction: row;
     }
-    li{
+    .nav-li{
         display: block;
     }
     .navSousItemdrop{
         top: 3rem;
         left:18rem;
     }
-    .destination{
+    #destination{
         position: relative;
     }
+    
     .navSousItemdrop_active{
         position: absolute;
         top:4rem;
-        
     }
 }
