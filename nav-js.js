@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // function toggle() {
 //   let elm = document.getElementById("SousMenu").classList.toggle("destination");
 //   }
@@ -16,6 +17,9 @@
 //   }
 
 
+=======
+// fonction pour faire apparaitre / disparaitre le sous-menu
+>>>>>>> 9c963054c26f9edc10a1a22b907196e966014657
 function toggle() {
     let elm = document.getElementById('sousMenu');
 
@@ -24,7 +28,11 @@ function toggle() {
     } else {
         elm.className = 'navSousItemdrop_active';
     }
+}
 
+
+
+<<<<<<< HEAD
 }
 
 // function togglePage() {
@@ -47,3 +55,5 @@ function stickyNav() {
         navbar.classList.remove("sticky")
     }
 }
+=======
+>>>>>>> 9c963054c26f9edc10a1a22b907196e966014657
