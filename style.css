@@ -67,26 +67,22 @@ section {
   font-style: italic;
 }
 
-.inactif{
-  display:none;
-    transition: 0.5s 0s ease-in-out;
-}
-.actif {
-  display: initial;
-  transition: 0.5s 0s ease-in-out;
-
-}
-
 /******FIN GENERIQUE***********/
 
 /********Testimonial Section***/
 .testimonial {
   /* border: 1px solid var(--main-font-color); */
+  display: none;
+}
+
+.actif {
+  display: initial;
+  transition: 0.5s 0s ease-in-out;
   text-shadow: 1px 1px rgb(255, 202, 202);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: var(--corner-img-2);
   padding: calc(var(--spacing) * 2);
-  background-color: var(--background-color);
+  background-color: var(--main-color);
   margin: 1rem auto;
 }
 
