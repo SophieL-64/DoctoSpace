@@ -1,6 +1,9 @@
 :root {
-    --clr_gray1: rgb(65, 59, 59);
-    --clr_gray2: rgb(194, 189, 189);
+    --clr_gray1: rgb(216, 214, 214);
+    --clr_gray2: rgb(138, 138, 138);
+    --clr_hover: rgb(178, 101, 201);
+    --clr_title: rgb(30, 224, 78);
+
 }
 
 *,
@@ -17,10 +20,27 @@ body {
     color:var(--clr_gray1);
     height: 100vh;
 }
-.parallaxe-nav{
-    
-    background-color:rgba(19, 19, 134, 0.865);
+header>h1{
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 3rem;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+        0 3px 0 var(--clr_title), 0 4px 0 var(--clr_title),
+        0 5px 0 var(--clr_title), 0 6px 0 var(--clr_title),
+        0 20px 30px rgba(0, 0, 0, 0.5);
 }
+header h2{
+    text-align: center;
+    
+    font-size: 1.5rem;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+        0 3px 0 var(--clr_title), 0 4px 0 var(--clr_title),
+        0 5px 0 var(--clr_title), 0 6px 0 var(--clr_title),
+        0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+    
 .nav{
     border-bottom: 1px solid var(--clr_gray2);
 
@@ -51,7 +71,7 @@ label>svg{
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    
+    margin:1rem;
 }
 
 .navSousItemdrop{
@@ -60,7 +80,7 @@ label>svg{
 
 .navSousItemdrop_active{
     box-shadow: 0 0 10px var(--clr_gray2);
-    background-color: rgba(19, 19, 134, 0.865);
+    background-color: white;
     border-radius: 4px;
     width: 12rem;
     padding: 1rem;
@@ -72,23 +92,22 @@ label>svg{
 }
 
 
-.nav-li{
+li{
     list-style: none;
     padding: 0.5rem 1rem;
     display: none;
     transition: background-color 200ms ease-in-out;
-    color: rgb(232, 233, 234);
+
 }
 .navMenu li:hover, 
 .navMenu li:focus{
-    background-color: rgb(205, 183, 10);
+    background-color: var(--clr_hover)
 }
-
-.nav-li:first-child{
+li:first-child{
     /* margin-left: 4px; */
     display: block;
 }
-.nav-link {
+a{
     text-decoration: none;
     color: inherit;
     font-size: 1.2rem;
@@ -104,19 +123,27 @@ a>svg{
 }
 
 #navCheckbox:checked ~ label.navToggle .close{
-    display: none;
-}
-
-#navCheckbox:checked ~ label.navToggle .menu{
     display: block;
 }
 
+#navCheckbox:checked ~ label.navToggle .menu{
+    display: none;
+}
 
+
+  
 @media screen and (min-width:560px) {
 
- 
     .navMenu{
         margin: 0;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        left: 0;
+        /* height: 80px; */
+        transition: background .2s ease,box-shadow .2s ease;
+        box-shadow: 0 1px 0 #f7f7f7;
     }
     .nav .navToggle{
         display: none;
@@ -124,19 +151,54 @@ a>svg{
     .nav .navMenu{
         flex-direction: row;
     }
-    .nav-li{
+    li{
         display: block;
     }
     .navSousItemdrop{
         top: 3rem;
         left:18rem;
     }
-    #destination{
+    .destination{
         position: relative;
     }
-    
     .navSousItemdrop_active{
         position: absolute;
         top:2.5rem;
+        
     }
+
+    header>h1{
+        text-align: center;
+        line-height: 3em;
+        font-size: 7rem;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+            0 3px 0 var(--clr_title), 0 4px 0 var(--clr_title),
+            0 5px 0 var(--clr_title), 0 6px 0 var(--clr_title),
+            0 20px 30px rgba(0, 0, 0, 0.5);
+    }
+    header h2{
+        text-align: center;
+        
+        font-size: 4rem;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+            0 3px 0 var(--clr_title), 0 4px 0 var(--clr_title),
+            0 5px 0 var(--clr_title), 0 6px 0 var(--clr_title),
+            0 20px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .parallax-effect {
+        background-image: url("./haeder-img.jpg");
+        min-height: 600px;
+        background-attachment: fixed;
+        background-position:bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax-effect + div {
+        height: 1000px;
+        /* background-image: linear-gradient(to right top, #7e95a8, #95b6f3, #d31e2d, #2c2fce, #070707); */
+        font-size: 36px;
+        text-align: center;
+        font-family: "Raleway", Arial, sans-serif;
+      }
 }
