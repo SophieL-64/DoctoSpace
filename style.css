@@ -67,16 +67,18 @@ section {
   font-style: italic;
 }
 
+.actif {
+   display: initial;
+ }
+
+.inactif {
+   display: none;
+ }
 /******FIN GENERIQUE***********/
 
 /********Testimonial Section***/
-.testimonial {
+#testimonials .testimonial  {
   /* border: 1px solid var(--main-font-color); */
-  display: none;
-}
-
-.actif {
-  display: initial;
   transition: 0.5s 0s ease-in-out;
   text-shadow: 1px 1px rgb(255, 202, 202);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -85,6 +87,9 @@ section {
   background-color: var(--main-color);
   margin: 1rem auto;
 }
+
+
+
 
 .testimonials-flex-img {
   /** media query pour augementer mage suivant terminal**/
