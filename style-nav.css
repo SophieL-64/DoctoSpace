@@ -17,7 +17,10 @@ body {
     color:var(--clr_gray1);
     height: 100vh;
 }
-
+.parallaxe-nav{
+    
+    background-color:rgba(19, 19, 134, 0.865);
+}
 .nav{
     border-bottom: 1px solid var(--clr_gray2);
 
@@ -48,7 +51,7 @@ label>svg{
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin:1rem;
+    
 }
 
 .navSousItemdrop{
@@ -57,7 +60,7 @@ label>svg{
 
 .navSousItemdrop_active{
     box-shadow: 0 0 10px var(--clr_gray2);
-    background-color: white;
+    background-color: rgba(19, 19, 134, 0.865);
     border-radius: 4px;
     width: 12rem;
     padding: 1rem;
@@ -74,20 +77,18 @@ label>svg{
     padding: 0.5rem 1rem;
     display: none;
     transition: background-color 200ms ease-in-out;
-
+    color: rgb(232, 233, 234);
 }
 .navMenu li:hover, 
 .navMenu li:focus{
-    background-color: rgb(179, 221, 25);
+    background-color: rgb(205, 183, 10);
 }
-.navSousMenu {
-    list-style-type: none;
-}
+
 .nav-li:first-child{
     /* margin-left: 4px; */
     display: block;
 }
-.nav-link e.destination{
+.nav-link {
     text-decoration: none;
     color: inherit;
     font-size: 1.2rem;
@@ -103,16 +104,20 @@ a>svg{
 }
 
 #navCheckbox:checked ~ label.navToggle .close{
-    display: block;
+    display: none;
 }
 
 #navCheckbox:checked ~ label.navToggle .menu{
-    display: none;
+    display: block;
 }
 
 
 @media screen and (min-width:560px) {
 
+ 
+    .navMenu{
+        margin: 0;
+    }
     .nav .navToggle{
         display: none;
     }
@@ -132,6 +137,6 @@ a>svg{
     
     .navSousItemdrop_active{
         position: absolute;
-        top:4rem;
+        top:2.5rem;
     }
 }
