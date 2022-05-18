@@ -9,7 +9,7 @@ setInterval(() => {
   } else {
     i = 1;
   }
-}, 3000);
+}, 10000);
 
 function permute(i) {
   let article1 = document.getElementById("testimonial-1");
@@ -34,5 +34,4 @@ function permute(i) {
   }
 
   console.log(i, article1, article2, article3);
-
 }

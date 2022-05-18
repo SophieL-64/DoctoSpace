@@ -73,12 +73,17 @@ section {
 .testimonial {
   /* border: 1px solid var(--main-font-color); */
   display: none;
+  color: var(--secondary-font-color);
+}
+
+.testimonial p {
+  line-height: 2rem;
 }
 
 .actif {
   display: initial;
   transition: 0.5s 0s ease-in-out;
-  text-shadow: 1px 1px rgb(255, 202, 202);
+  /* text-shadow: 1px 1px rgb(255, 202, 202); */
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: var(--corner-img-2);
   padding: calc(var(--spacing) * 2);
@@ -110,6 +115,27 @@ section {
   border-radius: var(--corner-img-1);
 
   text-align: center;
+}
+
+.img1 {
+  background: url("assets/img/testimonial-1-AVANT.jpg") center center/cover;
+}
+
+.img2 {
+  background: url("assets/img/testimonial-1-APRES.jpeg") center center/cover;
+}
+
+.img3 {
+  background: url("assets/img/testimonial-2-AVANT.jpg") center center/cover;
+}
+
+.img4 {
+  background: url("assets/img/testimonial-2-APRES.jpg") center center/cover;
+}
+
+.img5 {
+  background: url("assets/img/testimonial-3-AVANT-APRES.png") center
+    center/cover;
 }
 
 .testimonial-text {
