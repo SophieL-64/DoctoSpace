@@ -20,6 +20,7 @@ body {
     color:var(--clr_gray1);
     height: 100vh;
 }
+<<<<<<< HEAD
 header>h1{
     text-align: center;
     line-height: 1.5em;
@@ -41,6 +42,12 @@ header h2{
 
 
     
+=======
+.parallaxe-nav{
+    
+    background-color:rgba(19, 19, 134, 0.865);
+}
+>>>>>>> 9c963054c26f9edc10a1a22b907196e966014657
 .nav{
     border-bottom: 1px solid var(--clr_gray2);
 
@@ -71,7 +78,7 @@ label>svg{
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin:1rem;
+    
 }
 
 .navSousItemdrop{
@@ -80,7 +87,7 @@ label>svg{
 
 .navSousItemdrop_active{
     box-shadow: 0 0 10px var(--clr_gray2);
-    background-color: white;
+    background-color: rgba(19, 19, 134, 0.865);
     border-radius: 4px;
     width: 12rem;
     padding: 1rem;
@@ -92,22 +99,27 @@ label>svg{
 }
 
 
-li{
+.nav-li{
     list-style: none;
     padding: 0.5rem 1rem;
     display: none;
     transition: background-color 200ms ease-in-out;
-
+    color: rgb(232, 233, 234);
 }
 .navMenu li:hover, 
 .navMenu li:focus{
+<<<<<<< HEAD
     background-color: var(--clr_hover)
+=======
+    background-color: rgb(205, 183, 10);
+>>>>>>> 9c963054c26f9edc10a1a22b907196e966014657
 }
-li:first-child{
+
+.nav-li:first-child{
     /* margin-left: 4px; */
     display: block;
 }
-a{
+.nav-link {
     text-decoration: none;
     color: inherit;
     font-size: 1.2rem;
@@ -123,13 +135,10 @@ a>svg{
 }
 
 #navCheckbox:checked ~ label.navToggle .close{
-    display: block;
-}
-
-#navCheckbox:checked ~ label.navToggle .menu{
     display: none;
 }
 
+<<<<<<< HEAD
 
   
 @media screen and (min-width:560px) {
@@ -144,6 +153,18 @@ a>svg{
         /* height: 80px; */
         transition: background .2s ease,box-shadow .2s ease;
         box-shadow: 0 1px 0 #f7f7f7;
+=======
+#navCheckbox:checked ~ label.navToggle .menu{
+    display: block;
+}
+
+
+@media screen and (min-width:560px) {
+
+ 
+    .navMenu{
+        margin: 0;
+>>>>>>> 9c963054c26f9edc10a1a22b907196e966014657
     }
     .nav .navToggle{
         display: none;
@@ -151,20 +172,24 @@ a>svg{
     .nav .navMenu{
         flex-direction: row;
     }
-    li{
+    .nav-li{
         display: block;
     }
     .navSousItemdrop{
         top: 3rem;
         left:18rem;
     }
-    .destination{
+    #destination{
         position: relative;
     }
+    
     .navSousItemdrop_active{
         position: absolute;
         top:2.5rem;
+<<<<<<< HEAD
         
+=======
+>>>>>>> 9c963054c26f9edc10a1a22b907196e966014657
     }
 
     header>h1{
