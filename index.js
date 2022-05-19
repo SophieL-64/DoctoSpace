@@ -9,14 +9,14 @@ setInterval(() => {
   } else {
     i = 1;
   }
-}, 3000);
+}, 10000);
 
 function permute(i) {
   let article1 = document.getElementById("testimonial-1");
   let article2 = document.getElementById("testimonial-2");
   let article3 = document.getElementById("testimonial-3");
   
-  /**supression des classes active et inactive*/
+  /**clean classes active et inactive*/
   article1.classList.remove("actif");
   article2.classList.remove("actif");
   article3.classList.remove("actif");
@@ -44,5 +44,4 @@ function permute(i) {
   }
 
   console.log(i, article1, article2, article3);
-
 }
