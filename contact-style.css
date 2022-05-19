@@ -25,12 +25,16 @@
     line-height: 2;
     color:var(--secondary-font-color); 
 }
-#contactForm input[type="submit"] {
+
+#contactForm button {
     background:var(--secondary-color) ; 
     color:var(--secondary-font-color); 
     border: none;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 8px 8px;
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
 }
 
 input[type="text"],
@@ -56,14 +60,11 @@ margin-bottom:var(--spacing);
 
 @media screen and (min-width:560px) {
     #contact{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top:calc(var(--spacing)*4);
-        margin-bottom:calc(var(--spacing)*4) ;
+        margin: 16vh auto 0 auto;
         padding:var(--spacing);
         background-color:var(--main-color) ;
         border-radius: 8px;
+        max-width: 560px;
     }
 
     #contactForm {
