@@ -24,8 +24,7 @@
 
 /*** GENERIQUE*********/
 body {
-  --testimonials-width: 300px;
-  min-width: var(--testimonials-width);
+ 
   color: var(--main-font-color);
 
   font-family: var(--main-font-family);
@@ -49,6 +48,7 @@ section {
   display: flex;
   flex-flow: column;
 }
+
 
 .flex-middle-text {
   display: flex;
@@ -79,6 +79,8 @@ section {
 /********Testimonial Section***/
 #testimonials .testimonial  {
   /* border: 1px solid var(--main-font-color); */
+  --testimonials-width: 300px;
+  min-width: var(--testimonials-width);
   transition: 0.5s 0s ease-in-out;
   text-shadow: 1px 1px rgb(255, 202, 202);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -147,6 +149,10 @@ section {
 /****Fin Testimonial*****/
 
 
-@media screen and (min-width:500) {
-  
+@media screen and (min-width:500px) {
+  #testimonials .flex-container {
+    min-width: auto;
+    flex-flow: row;
+    gap:var(--spacing);
+    }
 }

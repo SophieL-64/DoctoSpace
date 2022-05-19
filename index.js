@@ -37,7 +37,10 @@ setInterval(() => {
 }
 
  
-
+/**
+ * Permute article actif or inactf seq 
+ * @param {index article to set actif} i 
+ */
 function permute(i) {
   /**supression des classes active et inactive*/
   article1.classList.remove("actif");
