@@ -26,7 +26,8 @@
 
 /*** GENERIQUE*********/
 body {
- 
+  max-width: 1440px;
+  margin:auto;
   color: var(--main-font-color);
 
   font-family: var(--main-font-family);
@@ -49,6 +50,7 @@ section {
 .flex-container {
   display: flex;
   flex-flow: column;
+
 }
 
 
@@ -80,13 +82,13 @@ section {
 
 /********Testimonial Section***/
 #testimonials .testimonial  {
+  flex:1;
   /* border: 1px solid var(--main-font-color); */
-    --testimonials-width: 300px;
-      
-      min-width: var(--testimonials-width);
+      --testimonials-width: 300px;
+      /* min-width: var(--testimonials-width); */
       color: var(--secondary-font-color);
       transition: 0.5s 0s ease-in-out;
-      text-shadow: 1px 1px rgb(255, 202, 202);
+      /* text-shadow: 1px 1px rgb(255, 202, 202); */
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
       border-radius: var(--corner-img-2);
       padding: calc(var(--spacing) * 2);
