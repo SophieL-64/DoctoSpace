@@ -89,7 +89,7 @@ section {
       color: var(--secondary-font-color);
       transition: 0.5s 0s ease-in-out;
       /* text-shadow: 1px 1px rgb(255, 202, 202); */
-      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      box-shadow: 1px 3px 10px #333;
       border-radius: var(--corner-img-2);
       padding: calc(var(--spacing) * 2);
       background-color: var(--main-color);
@@ -107,7 +107,7 @@ section {
   align-content: center;
   justify-items: center;
 
-  color: var(--secondary-color);
+  color: var(--secondary-font-color);
   font-size: 2rem;
   font-style: italic;
 }
@@ -173,7 +173,7 @@ section {
 
 /****Fin Testimonial*****/
 
-/****MEdia query pour version Desktop***/
+/****Media query pour version Desktop***/
 @media screen and (min-width:400px) {
   #testimonials .flex-container {
     min-width: auto;
