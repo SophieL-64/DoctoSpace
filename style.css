@@ -52,6 +52,7 @@ section {
   flex: row wrap;
   justify-content: center;
   align-items: flex-end;
+  color: var(--secondary-font-color);
 }
 
 .text-opacity-8 {
