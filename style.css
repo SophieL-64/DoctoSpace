@@ -82,6 +82,7 @@ section {
 #testimonials .testimonial  {
   /* border: 1px solid var(--main-font-color); */
     --testimonials-width: 300px;
+      
       min-width: var(--testimonials-width);
       color: var(--secondary-font-color);
       transition: 0.5s 0s ease-in-out;
