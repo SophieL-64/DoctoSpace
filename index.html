@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="./src/css/style-nav.css">
+        <link rel="stylesheet" href="./src/css/slider.css">
     </head>
-
     <body>
         <header class="parallax-effect">
             <nav class="nav">
-
                 <input type="checkbox" id="navCheckbox" class="navCheckbox">
                 <label for="navCheckbox" class="navToggle">
                     <svg class="menu" viewBox="0 0 448 512" width="100" title="bar">
@@ -24,7 +22,6 @@
                             d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z" />
                     </svg>
                 </label>
-
                 <ul class="navMenu">
                     <li>
                         <a href="#">
@@ -33,8 +30,7 @@
                                     d="M129.1 480H128V384H352L245.2 448.1C210.4 468.1 170.6 480 129.1 480zM352 128H128V32H129.1C170.6 32 210.4 43.03 245.2 63.92L352 128zM104 128C130.2 128 153.4 140.6 168 160H456C525.3 160 591 182.7 635.2 241.6C641.6 250.1 641.6 261.9 635.2 270.4C591 329.3 525.3 352 456 352H168C153.4 371.4 130.2 384 104 384H96V480H80C53.49 480 32 458.5 32 432V384H40C17.91 384 0 366.1 0 344V168C0 145.9 17.89 128 39.96 128H32V80C32 53.49 53.49 32 80 32H96V128H104zM476.4 208C473.1 208 472 209.1 472 212.4V299.6C472 302 473.1 304 476.4 304C496.1 304 512 288.1 512 268.4V243.6C512 223.9 496.1 208 476.4 208z" />
                             </svg>
                         </a>
-                    </li>
-             
+                    </li>             
                     <li>
                         <a href="#">A propos</a>
                     </li>
@@ -59,7 +55,6 @@
                         <a href="#">Contact</a>
                     </li>
                 </ul>
-
             </nav>
             <h1>DOCTOSPACE</h1>
             <h3>Votre site de voyages thérapeutiques interplanétaires</h3>
@@ -73,19 +68,37 @@
             </p>
         </section>
 
-        <section class="parallax-effect">
+        <section class="color-slider">
             <h2>slide</h2>
             <!--slide 
             si class pour la section alors background image-->
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam velit quis tenetur obcaecati quae corporis
-                repellendus. Omnis minima, quisquam sunt, quos autem eos vero ratione porro cum quis assumenda corporis.
-                Consequuntur temporibus laboriosam blanditiis unde perspiciatis suscipit adipisci quis laudantium sunt error
-                explicabo fuga quaerat reiciendis rem ipsa praesentium, ullam doloribus provident! Voluptates autem facilis
-                voluptas dignissimos illum accusantium laborum.
-                Corporis sapiente ea error neque? Possimus quam corporis, excepturi tenetur porro distinctio tempora, quis
-                vero earum, deleniti voluptatem in. Fugit explicabo unde animi corrupti rerum error facilis, non commodi
-                minus?
-            </p>
+              <!-- Slider container -->
+<div class="slider-container">
+<div class="slider">
+    <!-- slide 1 -->
+    <div class="slide" id="slide1">
+      <a href="https://www.google.com"><img src="src/img/img-slider/planet1.jpg" alt="" /></a>
+    </div>  
+    <!-- slide 2 -->
+    <div class="slide" id="slide1">
+      <a href="https://www.google.com"><img src="src/img/img-slider/planet2.jpg" alt="" /></a>
+    </div>
+  
+    <!-- slide 3 -->
+    <div class="slide" id="slide1">
+      <a href="https://www.google.com"><img src="src/img/img-slider/planet3.jpg" alt="" /></a>
+    </div>
+  
+    <!-- slide 4 -->
+    <div class="slide" id="slide1">
+      <a href="https://www.google.com"><img src="src/img/img-slider/planet4.jpg" alt="" /></a>
+    </div>
+  
+    <!-- Control buttons -->
+    <div class="btn btn-next"> &#10095; </div>
+    <div class="btn btn-prev"> &#10094; </div>
+  </div>
+ </div>
         </section>
 
         <section>
@@ -114,7 +127,7 @@
           </svg>
         </button>
       </div>
-
         <script src="src/js/main.js"></script>
+        <script src="src/js/slider.js"></script>
     </body>
 </html>
