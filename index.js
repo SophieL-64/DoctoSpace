@@ -1,7 +1,7 @@
 console.log("DOCTOSPACE");
 
  //car l'element affichge deja l'article 1 on veut commencer le 2 ensuite dans la boucle
- let widthCriteraMobile=400;
+let widthCriteraMobile=400;
 let height = document.body.clientHeight;
 let width = document.body.clientWidth;
 
@@ -32,7 +32,7 @@ setInterval(() => {
   } else {
     i = 1;
   }
-}, 3000);
+}, 10000);
 
 }
 
@@ -42,6 +42,7 @@ setInterval(() => {
  * @param {index article to set actif} i 
  */
 function permute(i) {
+
   /**supression des classes active et inactive*/
   article1.classList.remove("actif");
   article2.classList.remove("actif");
@@ -68,7 +69,5 @@ function permute(i) {
     article3.classList.add("actif");
     console.log("cas: ", 3);
   }
-
   console.log(i, article1, article2, article3);
-
 }
