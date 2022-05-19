@@ -1,6 +1,28 @@
 console.log("DOCTOSPACE");
 
-let i = 2; //car l'element affichge deja l'article 1 on veut commencer le 2 ensuite dans la boucle
+ //car l'element affichge deja l'article 1 on veut commencer le 2 ensuite dans la boucle
+let height = document.body.clientHeight;
+let width = document.body.clientWidth;
+
+let article1 = document.getElementById("testimonial-1");
+let article2 = document.getElementById("testimonial-2");
+let article3 = document.getElementById("testimonial-3");
+
+
+article1.classList.remove("inactif");
+article2.classList.remove("inactif");
+article3.classList.remove("inactif");
+article1.classList.add("actif");
+article2.classList.add("actif");
+article3.classList.add("actif");
+
+
+//version mobile first
+if (width<=500){
+  let i = 2;
+  article1.classList.add("actif");
+  article2.classList.add("inactif");
+  article3.classList.add("inactif");
 setInterval(() => {
   console.log("test interval toutes les 3 secondes");
   permute(i);
@@ -11,11 +33,11 @@ setInterval(() => {
   }
 }, 3000);
 
+}
+
+ 
+
 function permute(i) {
-  let article1 = document.getElementById("testimonial-1");
-  let article2 = document.getElementById("testimonial-2");
-  let article3 = document.getElementById("testimonial-3");
-  
   /**supression des classes active et inactive*/
   article1.classList.remove("actif");
   article2.classList.remove("actif");
