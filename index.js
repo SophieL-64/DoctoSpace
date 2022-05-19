@@ -1,6 +1,7 @@
 console.log("DOCTOSPACE");
 
  //car l'element affichge deja l'article 1 on veut commencer le 2 ensuite dans la boucle
+ let widthCriteraMobile=400;
 let height = document.body.clientHeight;
 let width = document.body.clientWidth;
 
@@ -18,7 +19,7 @@ article3.classList.add("actif");
 
 
 //version mobile first
-if (width<=500){
+if (width<=widthCriteraMobile){
   let i = 2;
   article1.classList.add("actif");
   article2.classList.add("inactif");
