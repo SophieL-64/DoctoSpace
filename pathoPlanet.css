@@ -1,3 +1,12 @@
+:root {
+  --main-font-family: Montserrat font;
+  --main-color: #0063a1;
+  --secondary-color: #543100;
+  --main-font-color: black;
+  --secondary-font-color: white;
+  --spacing: 8px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,21 +14,36 @@
 }
 
 .pic-ctn {
+  height: 240px; /* trouver une solution pour automatiser hauteur du container */
   width: 100%;
   position: relative;
+  margin-top: 15vh;
+  margin-bottom: calc(var(--spacing) * 2);
 }
 
-.pic {
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: display 10s infinite;
   width: 100%;
 }
 
-.advice {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+
+img:nth-child(5) {
+  animation-delay: 8s;
 }
 
 @keyframes display {
@@ -49,33 +73,22 @@
   }
 }
 
-.pic-ctn {
-  position: relative;
-  width: 100vw;
-  height: 300px;
-  margin-top: 15vh;
-}
-
-.pic-ctn > img {
+.advice {
   position: absolute;
-  top: 0;
+  bottom: 0px;
   left: 0;
-  opacity: 0;
-  animation: display 10s infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--spacing);
+  background-color: var(--main-color);
+  /* background-color: transparent; */
 }
 
-img:nth-child(2) {
-  animation-delay: 2s;
+.pathology {
+  padding: var(--spacing);
 }
 
-img:nth-child(3) {
-  animation-delay: 4s;
-}
-
-img:nth-child(4) {
-  animation-delay: 6s;
-}
-
-img:nth-child(5) {
-  animation-delay: 8s;
+.pathology h1 {
+  margin-bottom: calc(var(--spacing) * 2);
 }
