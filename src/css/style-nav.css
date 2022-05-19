@@ -69,7 +69,7 @@ a>svg{
     background-color:var(--dark-brown);
 }
 header{
-    background-image: url(/scr/img/haeder-img.jpg);
+    background-image: url(/src/img/haeder-img.jpg);
     min-height: 500px;
     background-attachment: fixed;
     background-position:top;
@@ -256,7 +256,7 @@ li:first-child{
     }
     
     .parallax-effect {
-        background-image: url("/scr/img/haeder-img.jpg");
+        background-image: url("/src/img/haeder-img.jpg");
         min-height: 600px;
         background-attachment: fixed;
         background-position:bottom;
