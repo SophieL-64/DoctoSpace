@@ -50,7 +50,24 @@ a>svg{
     display: none;
 
 }
+/* Retour en haut de la page */
+#haut {
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    z-index:99;
+    border:none;
+    outline:none;
+    background-color:var(--dark-orange);
+    color:var(--big-black-brown);
+    cursor:pointer;
+    border-radius:10px;
+}
 
+#haut:hover {
+    background-color:var(--dark-brown);
+}
 header{
     background-image: url(/scr/img/haeder-img.jpg);
     min-height: 500px;
@@ -61,7 +78,7 @@ header{
 }
 header>h1{
     text-align: center;
-    line-height: 5.5em;
+    line-height: 3.5em;
     font-size: 3rem;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
         0 3px 0 var(--clr_title), 0 4px 0 var(--clr_title),
@@ -72,9 +89,15 @@ header h2{
     text-align: center;
     color: var(--clr_secondary_font);
     font-size: 1.5rem;
+    line-height: 2.5em;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
-        0 3px 0 var(--clr_title), 0 4px 0 var(--clr_title),
-        0 5px 0 var(--clr_title), 0 6px 0 var(--clr_title),
+        0 20px 30px rgba(0, 0, 0, 0.5);
+}
+header h3{
+    text-align: center;
+    color: var(--clr_secondary_font);
+    font-size: 1rem;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
         0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -177,8 +200,8 @@ li:first-child{
     
     header>h1{
         text-align: center;
-    line-height: 3.5em;
-    font-size: 7rem;
+        line-height: 2.5em;
+        font-size: 7rem;
         text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
             0 3px 0 var(--clr_title), 0 4px 0 var(--clr_title),
             0 5px 0 var(--clr_title), 0 6px 0 var(--clr_title),
@@ -186,8 +209,15 @@ li:first-child{
     }
     header h2{
         text-align: center;
-        
         font-size: 4rem;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+            0 3px 0 var(--clr_title), 0 4px 0 var(--clr_title),
+            0 5px 0 var(--clr_title), 0 6px 0 var(--clr_title),
+            0 20px 30px rgba(0, 0, 0, 0.5);
+    }
+    header h3{
+        text-align: center;
+        font-size: 2rem;
         text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
             0 3px 0 var(--clr_title), 0 4px 0 var(--clr_title),
             0 5px 0 var(--clr_title), 0 6px 0 var(--clr_title),
