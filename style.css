@@ -1,4 +1,6 @@
 :root {
+
+  --width-mobile: 400px;
   --main-color: #0063a1;
   --secondary-color: #543100;
   --main-font-color: black;
@@ -24,8 +26,7 @@
 
 /*** GENERIQUE*********/
 body {
-  --testimonials-width: 300px;
-  min-width: var(--testimonials-width);
+ 
   color: var(--main-font-color);
 
   font-family: var(--main-font-family);
@@ -50,6 +51,7 @@ section {
   flex-flow: column;
 }
 
+
 .flex-middle-text {
   display: flex;
   flex: row wrap;
@@ -67,29 +69,31 @@ section {
   font-style: italic;
 }
 
+.actif {
+   display: initial;
+ }
+
+.inactif {
+   display: none;
+ }
 /******FIN GENERIQUE***********/
 
 /********Testimonial Section***/
-.testimonial {
+#testimonials .testimonial  {
   /* border: 1px solid var(--main-font-color); */
-  display: none;
-  color: var(--secondary-font-color);
+    --testimonials-width: 300px;
+      
+      min-width: var(--testimonials-width);
+      color: var(--secondary-font-color);
+      transition: 0.5s 0s ease-in-out;
+      text-shadow: 1px 1px rgb(255, 202, 202);
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      border-radius: var(--corner-img-2);
+      padding: calc(var(--spacing) * 2);
+      background-color: var(--main-color);
+      margin: 1rem auto;
 }
 
-.testimonial p {
-  line-height: 2rem;
-}
-
-.actif {
-  display: initial;
-  transition: 0.5s 0s ease-in-out;
-  /* text-shadow: 1px 1px rgb(255, 202, 202); */
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  border-radius: var(--corner-img-2);
-  padding: calc(var(--spacing) * 2);
-  background-color: var(--main-color);
-  margin: 1rem auto;
-}
 
 .testimonials-flex-img {
   /** media query pour augementer mage suivant terminal**/
@@ -166,3 +170,13 @@ section {
 }
 
 /****Fin Testimonial*****/
+
+/****MEdia query pour version Desktop***/
+@media screen and (min-width:400px) {
+  #testimonials .flex-container {
+    min-width: auto;
+    flex-flow: row;
+    gap:var(--spacing);
+    }
+}
+/**** FIN DES MEDIA*******/
