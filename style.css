@@ -24,10 +24,7 @@
 
 /*** GENERIQUE*********/
 body {
-  --testimonials-width: 300px;
-  min-width: var(--testimonials-width);
   color: var(--main-font-color);
-
   font-family: var(--main-font-family);
   /* font-family: "mont */
   font-size: 1.4rem;
@@ -74,6 +71,10 @@ section {
   /* border: 1px solid var(--main-font-color); */
   display: none;
   color: var(--secondary-font-color);
+  /* --testimonials-min-width: 300px;
+  min-width: var(--testimonials-min-width); */
+  --testimonials-max-width: 400px;
+  max-width: var(--testimonials-max-width);
 }
 
 .testimonial p {
