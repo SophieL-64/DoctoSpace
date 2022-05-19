@@ -101,7 +101,7 @@ section {
   align-content: center;
   justify-items: center;
 
-  color: var(--secondary-color);
+  color: var(--secondary-font-color);
   font-size: 2rem;
   font-style: italic;
 }
