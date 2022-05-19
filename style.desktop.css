@@ -1,3 +1,23 @@
+:root {
+  --main-color: #0063a1;
+  --secondary-color: #543100;
+  --main-font-color: black;
+  --secondary-font-color: white;
+
+  --main-font-family: "Montserrat";
+  --main-font-size: 14px;
+  --spacing: 8px;
+
+  --corner-img-1: 8px;
+  --corner-img-2: 12px;
+}
+
 body {
-    background: rgb(3, 28, 35);
+}
+
+@media screen and (min-width: 600px) {
+  .flex-container {
+    flex-direction: row;
+    gap: calc(var(--spacing) * 2);
+  }
 }
