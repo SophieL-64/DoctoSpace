@@ -18,7 +18,7 @@ function mediaquery(x) {
       } else {
         i = 1;
       }
-    }, 7000);
+    }, 5000);
 
     function permute(i) {
       let article1 = document.getElementById("testimonial-1");

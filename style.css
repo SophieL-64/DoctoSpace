@@ -1,4 +1,5 @@
 :root {
+  --width-mobile: 400px;
   --main-color: #0063a1;
   --secondary-color: #543100;
   --main-font-color: black;
@@ -24,12 +25,12 @@
 
 /*** GENERIQUE*********/
 body {
-  --testimonials-width: 300px;
-  min-width: var(--testimonials-width);
-  color: var(--main-font-color);
+  /* AJOUT VICTOR */
+  max-width: 1440px;
+  margin: auto;
 
+  color: var(--main-font-color);
   font-family: var(--main-font-family);
-  /* font-family: "mont */
   font-size: 1.4rem;
 }
 
@@ -81,14 +82,16 @@ section {
 }
 
 .actif {
+  flex: 1;
+  margin: 1rem 0.5rem;
   display: initial;
   transition: 0.5s 0s ease-in-out;
-  /* text-shadow: 1px 1px rgb(255, 202, 202); */
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow: 1px 3px 10px #333;
   border-radius: var(--corner-img-2);
   padding: calc(var(--spacing) * 2);
   background-color: var(--main-color);
   margin: 1rem auto;
+  --testimonials-width: 300px;
 }
 
 .testimonials-flex-img {
