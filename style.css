@@ -82,6 +82,7 @@ section {
 
 /********Testimonial Section***/
 #testimonials .testimonial  {
+  
   flex:1;
   /* border: 1px solid var(--main-font-color); */
       --testimonials-width: 300px;
@@ -93,7 +94,7 @@ section {
       border-radius: var(--corner-img-2);
       padding: calc(var(--spacing) * 2);
       background-color: var(--main-color);
-      margin: 1rem auto;
+      margin: 1rem 0.5rem ;
 }
 
 
@@ -179,6 +180,10 @@ section {
     min-width: auto;
     flex-flow: row;
     gap:var(--spacing);
+    }
+
+    #testimonials .testimonial {
+      margin: 1rem 0;
     }
 }
 /**** FIN DES MEDIA*******/
