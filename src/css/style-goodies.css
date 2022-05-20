@@ -2,16 +2,19 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap);
 
 :root {
-    font-size: calc(1vw + 1vh);
+  --main-color: #0063a1;
+  --secondary-color: #543100;
+  --clr_hover: rgb(178, 101, 201);
+  /* --font-size: calc(1vw + 1vh); */
+
 }
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+body {
+  background-color:var(--main-color)
 }
 
 
-/***************** animation Titre doctochop *****************/
+/***************** animation Titre doctoshop *****************/
 #container-title, #greetings {
   display: flex;
   justify-content: center;
@@ -30,43 +33,56 @@
   max-height: 300px;
 }
 
-#zoom {
+/* #zoom {
   flex: 1;
   font-size: 3rem;
   text-transform: uppercase;
-}
+} */
 
-#zoom span {
+/* #zoom span {
   display: block;
   font-size: 1.5rem;
   opacity: .8;
-}
+} */
 
-#zoom div {
+/* #zoom div {
   position: absolute;
   left: 0;
-  top: 5%;
+  top: 15%;
   width: 100%;
   text-align: center;
+} */
+
+/* #zoom div { 
+  opacity: 0; 
+} */
+
+#zoom div:nth-child(1) { 
+  display: none; 
 }
+#zoom div:nth-child(2) { 
+  display: none; 
+}
+#zoom div:nth-child(3) { 
+  display: none; 
+}
+#zoom div:nth-child(4) { 
+  display: none;
+}
+#zoom div:nth-child(5) { 
+  display: none;  
+}
+#zoom div:nth-child(6) { 
+  display: none;  }
 
-#zoom div { opacity: 0; }
-
-#zoom div:nth-child(1) { animation: zoom 24s linear 0s forwards; }
-#zoom div:nth-child(2) { animation: zoom 24s linear 4s forwards; }
-#zoom div:nth-child(3) { animation: zoom 24s linear 8s forwards; }
-#zoom div:nth-child(4) { animation: zoom 24s linear 12s forwards; }
-#zoom div:nth-child(5) { animation: zoom 24s linear 16s forwards; }
-#zoom div:nth-child(6) { animation: zoom 24s linear 20s forwards; }
-
-@keyframes zoom {
+/* @keyframes zoom {
     0% { opacity: 0;filter: blur(20px); transform:scale(12)}
     5% { opacity: 1;filter: blur(0); transform:scale(1)}
     10% { opacity: 1;filter: blur(0); transform:scale(.9)}
     20% { opacity: 0;filter: blur(10px); transform:scale(.1)}
     75% { opacity: 0}
     100% { opacity: 0}
-}
+} */
 
 #greetings {
   font-size: 2rem;
@@ -85,7 +101,7 @@
 #greetings div:nth-child(1) {
   zoom: 200%;
   margin-bottom: .5rem;
-  animation: appear 4s normal 21s forwards;
+  animation: appear 4s normal 4s forwards;
 }
 
 @keyframes appear {
@@ -113,7 +129,7 @@ b {
   margin-top: 24px;
 }
 .price {
-  color: grey;
+  color: var(--secondary-color);
   font-size: 2rem;
 }
 
@@ -167,6 +183,7 @@ p button:hover {
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     border-radius: 5px;
     transition: all .25s ease-in-out;
+    background-color: var(--clr_hover);
   }
 .grid-container div:hover img{
     filter: grayscale(0);
@@ -187,6 +204,11 @@ p{
     text-align: center;
     font-style: italic;
     }
+
+  .navMenu{
+    background-color: #070707;
+    
+}
     
 /* Retour en haut de la page */
 #haut {
@@ -207,5 +229,120 @@ p{
   
   #haut:hover {
   background-color:var(--dark-brown);
+  }
+
+
+  @media screen and (min-width:850px) {
+
+    #container-title, #greetings {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin-top: 2.5em;
+    }
+    
+    #container-title {
+      background-color: black;
+      color: white;
+      font: 700 1rem/1.618 'Oswald', sans-serif;
+      background-image: url('https://media2.giphy.com/media/MaThe6p8WAKbf9NDDM/giphy.gif');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      max-height: 300px;
+    }
+    
+    #zoom {
+      flex: 1;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+    
+    #zoom span {
+      display: block;
+      font-size: 1.5rem;
+      opacity: .8;
+    }
+    
+    #zoom div {
+      position: absolute;
+      left: 0;
+      top: 15%;
+      width: 100%;
+      text-align: center;
+    }
+    
+    #zoom div { 
+      opacity: 0; 
+    }
+    
+    #zoom div:nth-child(1) { 
+      display: block;
+      animation: zoom 24s linear 0s forwards; 
+    }
+    #zoom div:nth-child(2) { 
+      display: block;
+      animation: zoom 24s linear 4s forwards; 
+    }
+    #zoom div:nth-child(3) { 
+      display: block;
+      animation: zoom 24s linear 8s forwards; 
+    }
+    #zoom div:nth-child(4) {
+      display: block;
+      animation: zoom 24s linear 12s forwards; 
+    }
+    #zoom div:nth-child(5) {
+      display: block;
+      animation: zoom 24s linear 16s forwards; 
+    }
+    #zoom div:nth-child(6) {
+      display: block;
+      animation: zoom 24s linear 20s forwards; }
+    
+    @keyframes zoom {
+        0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+        5% { opacity: 1;filter: blur(0); transform:scale(1)}
+        10% { opacity: 1;filter: blur(0); transform:scale(.9)}
+        20% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+        75% { opacity: 0}
+        100% { opacity: 0}
+    }
+    
+    #greetings {
+      font-size: 2rem;
+      flex-direction: column;
+      text-transform: uppercase;
+      margin-right: 1em;
+    }
+    
+    #greetings div {
+      opacity: 0;
+      width: 100%;
+      text-align: center;
+    
+    }
+    
+    #greetings div:nth-child(1) {
+      zoom: 200%;
+      margin-bottom: .5rem;
+      animation: appear 4s normal 21s forwards;
+    }
+    
+    @keyframes appear {
+        0% { opacity: 0}
+        100% { opacity: 1}
+    }
+    
+    b {
+      zoom: 150%;
+      color: red;
+      text-shadow:
+       -1px -1px 0 white,
+        1px -1px 0 white,
+       -1px 1px 0 white, 
+        1px 1px 0 white;
+    }
   }
   
