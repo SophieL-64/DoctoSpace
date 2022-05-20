@@ -1,8 +1,6 @@
 gridGallery({
     // gallery selector
     selector: "#mSelector",
-    // enable dark mode
-    darkMode: true,
     // or "horizontal"
     layout: "square",
     // space between images
