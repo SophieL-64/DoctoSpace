@@ -1,16 +1,36 @@
+.gallery-container
+.img-big{
+    display: flex;
+    justify-content: center;
+}
 .gallery {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 5vw);
     grid-gap: 15px;
     background-image: linear-gradient(to top, #2c2fce, #070707);
+    margin: 0;
 }
 .gallery img {
+    margin: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    transition: transform .1s ease-in-out;
+    border-radius: 20px;
 }
+.gallery img:hover{
+    transform: scale(1.1);
+}
+.gallery .gallery__item{
+    filter: brightness(50%);
+    transition: filter .5s;
+}
+.gallery .gallery__item:hover{
+    filter: brightness(100%)
+}
+
 .gallery__item--1 {
     grid-column-start: 1;
     grid-column-end: 3;
