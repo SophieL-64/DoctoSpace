@@ -1,0 +1,111 @@
+/********Testimonial Section***/
+.testimonial {
+  display: none;
+  color: var(--secondary-font-color);
+  font-family: var(--main-font-family);
+  font-size: 1.4rem;
+}
+
+.testimonial p {
+  line-height: 2rem;
+}
+
+.actif {
+  flex: 1;
+  margin: 1rem 0.5rem;
+  display: initial;
+  transition: 0.5s 0s ease-in-out;
+  box-shadow: 1px 3px 10px #333;
+  border-radius: var(--corner-img-2);
+  padding: calc(var(--spacing) * 2);
+  background: linear-gradient(-45deg,#003454, #0063A1);
+  margin: 1rem auto;
+  --testimonials-width: 300px;
+}
+
+.testimonials-flex-img {
+  /** media query pour augementer mage suivant terminal**/
+  height: 20vh;
+
+  display: flex;
+  flex: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  justify-items: center;
+
+  color: var(--secondary-font-color);
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.testimonials-img {
+  width: 100%;
+  /* background: url("./assets/img/placeholder.jpeg") center center/cover; */
+  margin: calc(var(--spacing) * 2);
+
+  border: 0px solid rgba(255, 255, 255, 0.676);
+  border-radius: var(--corner-img-1);
+
+  text-align: center;
+}
+
+.img1 {
+  background: url("../img/testimonials-img/testimonial-1-AVANT.jpg") center
+    center/cover;
+}
+
+.img2 {
+  background: url("../img/testimonials-img/testimonial-1-APRES.jpeg") center
+    center/cover;
+}
+
+.img3 {
+  background: url("../img/testimonials-img/testimonial-2-AVANT.jpg") center
+    center/cover;
+}
+
+.img4 {
+  background: url("../img/testimonials-img/testimonial-2-APRES.jpg") center
+    center/cover;
+}
+
+.img5 {
+  background: url("../img/testimonials-img//testimonial-3-AVANT-APRES.png")
+    center center/cover;
+}
+
+.testimonial-text {
+  display: flex;
+  line-height: 1.2rem;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.testimonial-person {
+  display: inline-flex;
+  align-content: center;
+  justify-content: start;
+  align-items: center;
+}
+
+.testimonial-avatar {
+  background: url("../img/testimonials-img/avatar.jpg") center center/cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--main-font-color);
+}
+
+.testimonial-name {
+  font-style: italic;
+  padding: 1rem;
+}
+
+/****Fin Testimonial*****/
+
+@media screen and (min-width: 560px) {
+  .flex-container {
+    flex-direction: row;
+    gap: calc(var(--spacing) * 2);
+  }
+}

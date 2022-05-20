@@ -1,0 +1,15 @@
+{
+  "name": "DoctoSpace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:SophieL-64/DoctoSpace.git",
+  "author": "victor DG <v.degermain@gmail.com>",
+  "license": "MIT",
+
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  },
+  "scripts": {
+    "start":"parcel index.html"
+  }
+}
