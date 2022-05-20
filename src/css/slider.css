@@ -1,13 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .slider-container {
-    height: 100vh;
+    margin:3rem  auto;
     display: grid;
     place-items: center;
+    background-origin: transparent;
+    gap: 0;
 }
 
  @keyframes display {
@@ -38,7 +34,7 @@
     }
 
 .slider {
-    width: 90%;
+    width: 100%;
     max-width: 800px;
     height: 180px;
     position: relative;
@@ -86,8 +82,13 @@
     right: 2%;
   }
 
+
+
+
 @media screen and (min-width:560px) {
-   .slider, .slide{
+
+  .slider,
+  .slide {
     height: 360px;
   }
 }

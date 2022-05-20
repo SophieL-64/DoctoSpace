@@ -1,26 +1,21 @@
-:root {
+/* :root {
     --clr_main_font: rgb(216, 214, 214);
     --clr_secondary_font: rgb(138, 138, 138);
     --clr_hover: rgb(178, 101, 201);
     --clr_title: rgb(30, 224, 78);
     --clr_logo: rgb(10, 134, 236);
 
-}
+} */
 
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
-body {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
-    color:var(--clr_main_font);
-    height: 100vh;
-}
+
 
 /* NAVBAR */
 #navCheckbox:checked ~ ul.navMenu li{
@@ -178,7 +173,6 @@ li:first-child{
 
 
 @media screen and (min-width:560px) {
-
     .destination{
         position: relative;
     }
