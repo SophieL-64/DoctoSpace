@@ -1,0 +1,75 @@
+
+:root {
+    --main-color: #0063a1;
+    --secondary-color: #543100;
+    --main-font-color: black;
+    --secondary-font-color: white;
+
+    --main-font-size: 14px;
+    --spacing: 8px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#contactForm {
+    margin:calc(var(--spacing)*2) auto;
+    width: 300px;
+    padding-top:calc(var(--spacing)*2);
+}
+
+#contactForm label {
+    line-height: 2;
+    color:var(--secondary-font-color); 
+}
+
+#contactForm button {
+    background:var(--secondary-color) ; 
+    color:var(--secondary-font-color); 
+    border: none;
+    border-radius: 5px;
+    padding: 8px 8px;
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding:var(--spacing);
+margin-bottom:var(--spacing);
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:calc(var(--spacing)*2);
+    margin-bottom:calc(var(--spacing)*2);
+    margin-left: calc(var(--spacing)*4);
+    margin-right: calc(var(--spacing)*4);
+    padding:var(--spacing);
+    background-color:var(--main-color) ;
+    border-radius: 8px;
+}
+
+@media screen and (min-width:560px) {
+    #contact{
+        margin: 16vh auto 0 auto;
+        padding:var(--spacing);
+        background-color:var(--main-color) ;
+        border-radius: 8px;
+        max-width: 560px;;
+    }
+
+    #contactForm {
+        margin:calc(var(--spacing)*2) auto;
+        width: 400px;
+        padding-top:calc(var(--spacing)*2);
+    }
+}

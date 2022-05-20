@@ -5,25 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctoSpace - Homepage</title>
+    <link rel="stylesheet" href="./src/css/contact-style.css">
     <link rel="stylesheet" href="./src/css/style-nav.css" />
     <link rel="stylesheet" href="./src/css/slider.css" />
     <link rel="stylesheet" href="./src/css/style-testimonials.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width:390px)"
-      href="./src/css/style.desktop-testimonials.css"
-    />
+    <link rel="stylesheet" media="screen and (min-width:390px)" href="./src/css/style.desktop-testimonials.css"/>
     <script src="src/js/testimonials.js" defer></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap" rel="stylesheet"/>
   </head>
   <body>
     <header class="parallax-effect">
@@ -225,11 +216,18 @@
       </div>
     </section>
 
-    <!-- 
-        <section>
-            à ajouter
-        </section>
-    -->
+    <section id="contact">
+      <form id="contactForm">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" placeholder=" Enter your name "/><br />
+        <label for="email">Email:</label><br />
+        <input type="email"id="email"name="email" placeholder=" Enter your Email "/><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message"></textarea>
+        <br /><br />
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
     <!-- return button -->
     <div>
@@ -241,6 +239,7 @@
         </svg>
       </button>
     </div>
+    <script src="src/js/contact-script.js"></script>
     <script src="src/js/main.js"></script>
     <script src="src/js/slider.js"></script>
   </body>
