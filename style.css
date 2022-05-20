@@ -158,7 +158,7 @@ section {
 
 footer .flex-container{
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
       justify-content: center;
       align-content: center;
       justify-content: space-between;
@@ -166,6 +166,7 @@ footer .flex-container{
 }
 
 .footer-copyright{
+    flex:1;
   text-align: center;
   /* width:80%; */
   justify-content: end;
@@ -173,7 +174,7 @@ footer .flex-container{
 
 footer .social-link{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: end;
   align-content: center;
   align-items: center;
