@@ -4,55 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="pathoPlanet.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style-base.css" />
+    <link rel="stylesheet" href="src/css/pathoPlanet.css" />
+    <link rel="stylesheet" href="pathoPlanetDesktop.css" />
+    <title>Acnée 🤓</title>
+    <script src="src/js/pathoPlanet.js" defer></script>
+
   </head>
   <body>
-    <header>
-      <!-- Ajout navBarre -->
-      <div class="pic-ctn">
-        <img
-          src="https://images.pexels.com/photos/5587979/pexels-photo-5587979.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-          alt=""
-        />
-        <img
-          src="https://images.pexels.com/photos/5587979/pexels-photo-5587979.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-          alt=""
-        />
-        <img
-          src="https://images.pexels.com/photos/5587979/pexels-photo-5587979.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-          alt=""
-        />
-        <img
-          src="https://images.pexels.com/photos/5587979/pexels-photo-5587979.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-          alt=""
-        />
-        <img
-          src="https://images.pexels.com/photos/5587979/pexels-photo-5587979.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-          alt=""
-        />
-
-        <div class="advice">
-          <h2>Circuit Acnée</h2>
-          <p>🌕🌕🌕🌕🌕🌕🌕🌕 (1 avis)</p>
+    
+      <section class="revenues">
+        <div class="revenues-check"> 
+          <h2>
+            Nous allons maintenant vérifier à quelle offre vous êtes éligible
+          </h2>
+          <form class="RFR-form">
+            <label for="RFR-input"
+              >Merci de rentrer votre dernier revenu fiscal de référence.
+              <br />Ne mentez pas, on le saura...</label
+            >
+            <input
+              type="number"
+              id="RFR-input"
+              name="RFR-input"
+              placeholder="merci d'indiquer vos revenus"
+              required
+            />
+            <input type="submit" class="submit-btn" value="soumettre"></input>
+          </form>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="pathology">
-        <h1>Problème d'acnée ?</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          veritatis laborum quo quis iusto quasi vel minus odit in, porro
-          doloremque at aperiam autem, magni animi deserunt libero commodi amet!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          voluptatibus, inventore adipisci eligendi enim deleniti. Possimus
-          excepturi accusamus, eum molestiae, error cupiditate tempore
-          dignissimos facilis perferendis quidem, sed facere corrupti!
-        </p>
+
+        <div class="formulas inactif ">
+          <p class="close">╳</p>
+          <div class="options">
+            <div class="option1 inactif">
+              <p class="result-txt">
+                Bravo ! 😀 Vous êtes un gagnant.<br>Vous avez droit à la formule :
+              </p>
+              <div class="formula">
+              <p class=" option">PREMIUM<br />au top de ta forme</p>
+              <p class=" price">10.000📀</p>
+            </div>
+            </div>
+            <div class="option2 inactif">
+              <p class="result-txt">
+                Vous vous débrouillez bien dans la vie 😊.<br>Vous avez droit à la
+                formule :
+              </p>
+              <div class="formula">
+              <p class="option">BASICS<br />t’en as pour ton fric</p>
+              <p class="price">100📀</p>
+            </div>
+            </div>
+            <div class="option3 inactif">
+              <p class="result-txt">
+                Ah mince ! 😐 Vous êtes pas gâté(e)... <br>Pas de panique, nous avons
+                prévu une formule pour les gens comme vous :
+              </p>
+              <div class="formula">
+              <p class="option">ECO<br />pour tes petits maux</p>
+              <p class="price">1📀</p>
+            </div>
+            </div>
+          </div>
+
+          <p class="payment-ways">
+            <span id="payment-means">Moyens de paiement acceptés</span> : coupons PCS, transferts Western Union,
+            paiement sécurisé LeBonCoin, envoi d’argent liquide par la poste,
+            NFT, BitCoin, don d’organe, personne de la famille, premier-né
+          </p>
+          <p class="choice">
+            Pour passer commande, merci d'utiliser le formulaire
+            ci-dessous 
+          </p>
+        </div>
       </section>
+
     </main>
   </body>
 </html>

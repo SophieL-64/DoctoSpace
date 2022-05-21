@@ -1,0 +1,24 @@
+@media screen and (min-width: 600px) {
+  .revenues {
+    min-width: 600px;
+    max-width: 1000px;
+  }
+
+  #RFR-input {
+    min-width: 250px;
+  }
+
+  .submit-btn:hover {
+    background-color: goldenrod;
+    cursor: grab;
+  }
+
+  .result-txt {
+    margin-bottom: var(--spacing);
+    font-size: calc(var(--main-font-size) * 2);
+  }
+
+  .formula {
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FINANCIAL PART - REVENUES CHECKOUT */
+
+.revenues {
+  --revenues-border-radius: 20px;
+  margin: 0 auto;
+}
+
+.RFR-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing);
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+.revenues h2 {
+  border: none;
+}
+
+.revenues-check {
+  border: 3px solid var(--secondary-font-color);
+  border-radius: var(--revenues-border-radius);
+  font-family: var(--main-font-family);
+  background-color: var(--main-color);
+  padding: calc(var(--spacing) * 2);
+}
+
+#RFR-input {
+  margin: calc(var(--spacing) * 2) 0;
+  padding: var(--spacing);
+  display: block;
+  border-radius: 3px;
+}
+
+.submit-btn {
+  background-color: var(--secondary-color);
+  color: var(--secondary-font-color);
+  margin: var(--spacing) 0;
+  padding: var(--spacing);
+  border-radius: calc(var(--revenues-border-radius) * 0.5);
+}
+
+.formulas {
+  margin: calc(var(--spacing) * 8) auto;
+  border: 3px solid var(--secondary-font-color);
+  border-radius: var(--revenues-border-radius);
+  font-family: var(--main-font-family);
+  background-color: var(--main-color);
+  padding: calc(var(--spacing) * 2);
+  box-shadow: 3px 3px 10px 5px var(--main-font-color);
+  position: relative;
+}
+
+.close {
+  font-size: calc(var(--main-font-size) * 1);
+  border: 1px solid var(--secondary-font-color);
+  display: inline;
+  padding: var(--spacing) calc(var(--spacing) * 1.5);
+  box-shadow: 3px 3px 10px 5px var(--main-font-color);
+  position: absolute;
+  top: -65px;
+  right: 0;
+}
+
+/* .options {
+  display: flex;
+  flex-direction: column;
+} */
+
+.formula {
+  padding: var(--spacing);
+  margin: var(--spacing) 0;
+  border: 1px solid var(--secondary-font-color);
+  border-radius: var(--revenues-border-radius);
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: var(--secondary-color);
+}
+
+.payment-ways {
+  margin-top: calc(var(--spacing) * 2);
+  font-size: calc(var(--main-font-size));
+}
+
+.choice {
+  margin-top: calc(var(--spacing) * 2);
+  font-size: calc(var(--main-font-size) * 1.5);
+}
+
+.result-txt {
+  font-size: calc(var(--main-font-size) * 1.3);
+}
+#payment-means {
+  text-decoration: underline;
+}
+
+.inactif {
+  display: none;
+}
