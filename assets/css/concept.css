@@ -1,0 +1,15 @@
+#concept{
+
+}
+
+@media screen and (min-width: 560px) {
+    #concept {
+        height:40vh; 
+    }
+
+    .concept{
+        margin-top: 5rem;
+        line-height: 3rem;
+        width:100%;   
+    }    
+}
