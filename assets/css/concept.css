@@ -1,6 +1,14 @@
 #concept{
-
+    background-color: inherit;
 }
+ .concept {
+    flex-flow:column;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+ }
 
 @media screen and (min-width: 560px) {
     #concept {
@@ -8,6 +16,7 @@
     }
 
     .concept{
+        text-align: center;
         margin-top: 5rem;
         line-height: 3rem;
         width:100%;   
