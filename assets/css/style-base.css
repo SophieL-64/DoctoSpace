@@ -42,7 +42,26 @@ body {
     color: var(--clr_main_font);
     height: 100vh; 
     background: #333;
+    /* background-image: url('../img/haeder-img.jpg'); */
 }
+
+  .parallax-effect {
+      background-image: url("../img/haeder-img.jpg");
+      width: 100%;
+      /* min-height: 600px; */
+      background-attachment: fixed;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .parallax-effect2 {
+      /* height: 1000px; */
+      background-image: linear-gradient(to top, #2c2fce, #070707);
+      font-size: 20px;
+      text-align: center;
+      font-family: "Raleway", Arial, sans-serif;
+  }
 /**** FIN RESET****/
 
 /*** GENERIQUE*********/

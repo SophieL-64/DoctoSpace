@@ -3,8 +3,11 @@
     flex-direction: column;
     align-items: center;
     padding: var(--spacing);
-    background: linear-gradient(-45deg, #003454, #0063A1);
+    /* background: linear-gradient(-45deg, #003454, #0063A1); */
+   
     border-radius: 8px;
+    /* background-attachment: fixed;
+    background-image: url('../img/haeder-img.jpg') center center/cover; */
 
 
 }
@@ -54,7 +57,7 @@ textarea {
         align-items: start;
         margin:  0;
         padding:var(--spacing);
-        background-color:var(--main-color) ;
+        /* background-color:var(--main-color) ; */
     
         
     }
