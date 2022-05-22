@@ -40,20 +40,36 @@ textarea {
 width: 100%;
 padding:var(--spacing);
 margin-bottom:var(--spacing);
+border-radius: 5px;
+}
+
+textarea {
+    min-height:150px;
+    resize: vertical;
 }
 
 
 @media screen and (min-width:560px) {
     #contact{
+        align-items: start;
         margin:  0;
         padding:var(--spacing);
         background-color:var(--main-color) ;
+    
         
     }
 
     #contactForm {
         margin:calc(var(--spacing)*2) auto;
-        width: 400px;
+        display: flex;
+        max-width:600px;
+        flex-flow:column;
+        align-content: start;
+        width: 100%;
         padding-top:calc(var(--spacing)*2);
     }
+
+        #contactForm label {
+            align-self: start; 
+        }
 }

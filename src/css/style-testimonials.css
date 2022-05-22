@@ -105,7 +105,7 @@
 
 @media screen and (min-width: 560px) {
   .flex-container {
-    flex-direction: row;
+    flex-flow: row wrap;
     gap: calc(var(--spacing) * 2);
   }
 }
