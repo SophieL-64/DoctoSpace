@@ -1,0 +1,88 @@
+:root {
+    --main-color: #0063a1;
+    --secondary-color: #543100;
+    --main-font-color: black;
+    --secondary-font-color: white;
+
+    --main-font-size: 14px;
+    --spacing: 8px;
+
+    --clr_main_font: rgb(216, 214, 214);
+    --clr_secondary_font: rgb(138, 138, 138);
+    --clr_hover: rgb(178, 101, 201);
+    --clr_title: rgb(30, 224, 78);
+    --clr_logo: rgb(10, 134, 236);
+
+    --width-mobile: 400px;
+    --main-color: #0063a1;
+    --secondary-color: #543100;
+    --main-font-color: black;
+    --secondary-font-color: white;
+
+    --main-font-family: "Montserrat";
+    --main-font-size: 14px;
+    --spacing: 8px;
+
+    --corner-img-1: 8px;
+    --corner-img-2: 12px;
+}
+
+
+/***RESET CSS ****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: var(--clr_main_font);
+    height: 100vh; 
+    background: #333;
+}
+/**** FIN RESET****/
+
+/*** GENERIQUE*********/
+
+h2 {
+    color: var(--secondary-font-color);
+    margin-bottom: var(--spacing);
+    text-align: start;
+    border-bottom: 1px solid var(--main-font-color);
+    margin-bottom: 1rem;
+}
+
+section {
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.flex-middle-text {
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text-opacity-8 {
+    opacity: 80%;
+}
+
+.text-opacity-10 {
+    opacity: 100%;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+/******FIN GENERIQUE***********/
+
+
