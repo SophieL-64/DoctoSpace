@@ -10,9 +10,9 @@
 ## les outils a disposition    
 
    
-[accès figma](https://www.figma.com/file/n7KMbvcr5b4YnSJH4Cv6qc/DoctoSpace, 'site figma') 
-[accès trello](https://trello.com/b/m8uNAXUf/wildcode, 'site trello') 
-[accès slide](https://doctospace.netlify.app, 'site doctospace') 
+[accès figma](https://www.figma.com/file/n7KMbvcr5b4YnSJH4Cv6qc/DoctoSpace, 'site figma')  
+[accès trello](https://trello.com/b/m8uNAXUf/wildcode, 'site trello')   
+[accès slide](https://doctospace.netlify.app, 'site doctospace')  
 
 
 ## 💪 Solution  
