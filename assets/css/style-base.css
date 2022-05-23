@@ -120,7 +120,7 @@ section {
 }
 
 .bg-main-color{
-    fill: var(--clr_title);
+    fill: white;
 }
 
 /******FIN GENERIQUE***********/
@@ -149,7 +149,7 @@ a {
 
 a>svg {
     width: 1.5rem;
-    fill: var(--clr_logo)
+    fill: white;
 }
 
 .close {
@@ -566,14 +566,6 @@ li:first-child {
     color: var(--secondary-font-color);
 }
 
-#contactForm select {
-    padding: var(--spacing);
-    margin-bottom: var(--spacing);
-    color: var(--main-font-color);
-    border-radius: 5px;
-    background-color: white;
-}
-
 #contactForm button {
     background: var(--secondary-color);
     color: var(--secondary-font-color);
@@ -585,10 +577,9 @@ li:first-child {
     cursor: pointer;
 }
 
-
 input[type="text"],
 input[type="email"],
-textarea {
+textarea,select{
     width: 100%;
     padding: var(--spacing);
     margin-bottom: var(--spacing);
