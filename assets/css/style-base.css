@@ -52,7 +52,7 @@ a,li{
 /*** GENERIQUE*********/
 body {
     font-family: var(--text-font-family);
-    font-weight: 700;
+    font-weight: 400;
     font-size: 20px;
     color: var(--clr_main_font);
     height: 100vh;
@@ -162,9 +162,6 @@ a>svg {
     display: none;
     position: fixed;
     bottom: 20px;
-
-
-
     right: 30px;
     z-index: 99;
     border: none;
@@ -564,9 +561,17 @@ li:first-child {
 }
 
 #contactForm label {
-    font-family: var(--text-font-family);
-    line-height: 2;
+    font-family: var(--title-font-family);
+    line-height: 2.2rem;
     color: var(--secondary-font-color);
+}
+
+#contactForm select {
+    padding: var(--spacing);
+    margin-bottom: var(--spacing);
+    color: var(--main-font-color);
+    border-radius: 5px;
+    background-color: white;
 }
 
 #contactForm button {
@@ -786,7 +791,7 @@ footer .social-link{
 /*****SECTION FOOTER *****/
 footer {
             padding: 2rem 6rem;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
 
 footer .social-link {
