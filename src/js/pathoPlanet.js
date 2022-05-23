@@ -4,7 +4,7 @@ const revenuesCard = document.querySelector(".revenues-check");
 const revenuesForm = document.querySelector(".RFR-form");
 let revenuesInput = 0;
 const formulasCard = document.querySelector(".formulas");
-const close = document.querySelector(".close");
+const closeFormulas = document.querySelector(".close-formulas");
 
 const option1 = document.querySelector(".option1");
 const option2 = document.querySelector(".option2");
@@ -30,7 +30,7 @@ revenuesForm.onsubmit = function (event) {
 };
 
 /* fermeture de l'encart Formules, on ré-active l'encart Revenus  */
-close.onclick = function () {
+closeFormulas.onclick = function () {
   window.location.reload();
   revenuesInput.value = "";
   revenuesCard.classList.toggle("inactif");
