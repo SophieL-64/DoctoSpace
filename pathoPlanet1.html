@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="pathoPlanet.css" />
-    <link rel="stylesheet" href="./src/css/style-base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap" rel="stylesheet"/>
-    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style-base.css" />
+    <link rel="stylesheet" href="src/css/pathoPlanet.css" />
+    <link rel="stylesheet" href="src/css/pathoPlanetDesktop.css" />
+    <title>Acnée 🤓</title>
+    <script src="src/js/pathoPlanet.js" defer></script>
   </head>
   <body>
    <nav class="nav">
@@ -85,7 +87,8 @@
         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla temporibus suscipit cupiditate quam ad! Neque, possimus beatae aliquam quod dicta corrupti unde est repellendus, deserunt et, at inventore alias.</li>
         <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, inventore natus? Facere exercitationem dolor corrupti tenetur omnis ad nobis distinctio nesciunt ullam! Perspiciatis consequuntur voluptas ratione dolore facere magni vel?</li>
         </ul>
-      </section>
+</section>
+
     </main>
     <aside class="bandeau-container">
         <div class="bandeau">10 jours &#8987 </div> 
@@ -96,11 +99,72 @@
     <div class="planete-container">
     <h3 class="destination">Votre destination santé</h3>
     </div>
-     <form id="verif-revenu" name="form1" method="" action="">
-      <p class="income">Entrez votre revenu fiscal de référence:</p>
-      <textarea id="revenu" name="name" required></textarea><br>
-      <input type="submit" value="Submit">
-     </form>
+
+
+    <section class="revenues">
+      <div class="revenues-check"> 
+        <h2>
+          Nous allons maintenant vérifier à quelle offre vous êtes éligible
+        </h2>
+        <form class="RFR-form">
+          <label for="RFR-input"
+            >Merci de rentrer votre dernier revenu fiscal de référence.
+            <br />Ne mentez pas, on le saura...</label
+          >
+          <input
+            type="number"
+            id="RFR-input"
+            name="RFR-input"
+            placeholder="merci d'indiquer vos revenus"
+            required
+          />
+          <input type="submit" class="submit-btn" value="soumettre"></input>
+        </form>
+      </div>
+
+      <div class="formulas inactif ">
+        <p class="close-formulas">╳</p>
+        <div class="options">
+          <div class="option1 inactif">
+            <p class="result-txt">
+              Bravo ! 😀 Vous êtes un gagnant.<br>Vous avez droit à la formule :
+            </p>
+            <div class="formula">
+            <p class=" option">PREMIUM<br />au top de ta forme</p>
+            <p class=" price">10.000📀</p>
+            </div>
+          </div>
+          <div class="option2 inactif">
+            <p class="result-txt">
+              Vous vous débrouillez bien dans la vie 😊.<br>Vous avez droit à la
+              formule :
+            </p>
+            <div class="formula">
+              <p class="option">BASICS<br />t’en as pour ton fric</p>
+              <p class="price">100📀</p>
+            </div>
+          </div>
+          <div class="option3 inactif">
+            <p class="result-txt">
+              Ah mince ! 😐 Vous êtes pas gâté(e)... <br>Pas de panique, nous avons
+              prévu une formule pour les gens comme vous :
+            </p>
+            <div class="formula">
+            <p class="option">ECO<br />pour tes petits maux</p>
+            <p class="price">1📀</p>
+            </div>
+          </div>
+        </div>
+        <p class="payment-ways">
+          <span id="payment-means">Moyens de paiement acceptés</span> : coupons PCS, transferts Western Union,
+          paiement sécurisé LeBonCoin, envoi d’argent liquide par la poste,
+          NFT, BitCoin, don d’organe, personne de la famille, premier-né
+        </p>
+        <p class="choice">
+          Pour passer commande, merci d'utiliser <a href="index.html/#contactForm">ce formulaire </a> 
+        </p>
+      </div>
+    </section>
        <footer>
       <div class="flex-container">
         <div class="footer-copyright">
@@ -122,6 +186,6 @@
         </svg>
       </button>
     </div>
-  <script src="src/js/main.js" defer></script>
+
   </body>
 </html>
