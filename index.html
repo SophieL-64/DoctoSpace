@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/style-testimonials.css" />
     <link rel="stylesheet" href="./assets/css/style-footer.css" />
     <link rel="stylesheet" media="screen and (min-width:390px)" href="./assets/css/style.desktop-testimonials.css"/>
+    <link rel="stylesheet" href="./assets/css/tabs.css ">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,6 +24,8 @@
     <script src="./contact-script.js" defer></script>
     <script src="./main.js" defer></script>
     <script src="./slider.js" defer></script>
+    <script src="./script.js" defer></script>
+
   </head>
   <body>
     <header class="parallax-effect">
@@ -96,6 +99,30 @@
           revigorants.</p>
       </div>
      
+    </section>
+
+    <!-- Tabs container -->
+    <section class="tabs-container">
+      <ul class="tabs">
+        <li data-tab-target="#pathologie1" class="active tab">Pathologie 1</li>
+        <li data-tab-target="#pathologie2" class="tab">Pathologie 2</li>
+        <li data-tab-target="#pathologie3" class="tab">Pathologie 3</li>
+      </ul>
+      <div class="tab-content">
+        <div id="pathologie1" data-tab-content class="active"> <!-- active by default -->
+          <h2>Pathologie 1</h2>
+          <p>Description de la pathologie 1</p>
+        </div>
+      
+        <div id="pathologie2" data-tab-content>
+            <h2>Pathologie 2</h2>
+            <p>Description de la pathologie 2</p>
+        </div>
+        <div id="pathologie3" data-tab-content>
+          <h2>Pathologie 3</h2>
+          <p>Description de la pathologie 3</p>
+        </div>
+      </div>
     </section>
 
     <section class="parallax-effect">
@@ -223,7 +250,7 @@
       </div>
     </section>
 
-   
+
     <section class="parallax-effect" id="contact-box">
         <h2>Contact</h2>
           <div id="contact">
