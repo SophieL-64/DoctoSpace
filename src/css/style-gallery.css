@@ -1,13 +1,26 @@
+body {
+    background-image: url("../img/haeder-img.jpg");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .img-big {
     display: flex;
     justify-content: center;
 }
+.gallery-container {
+    padding: 40px;
+    
+}
 .gallery {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 5vw);
+    grid-template-rows: repeat(4, 5vw);
     grid-gap: 15px;
-    background-image: linear-gradient(to top, #2c2fce, #070707);
+    user-select: none;
+    padding: 10px 10px;
 }
 .gallery img {
     margin: 0;
