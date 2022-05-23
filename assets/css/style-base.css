@@ -603,16 +603,21 @@ textarea {
 footer {
     padding: 1rem;
     color: var(--secondary-font-color);
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+}
+footer a {
+    text-decoration: none;
+    margin: 0rem 2rem;
 }
 
 footer .flex-container {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-content: center;
-
-    align-items: center;
+    height: auto;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+            align-items: center;
+                justify-items: center;
 }
 
 .footer-copyright {
@@ -623,10 +628,11 @@ footer .flex-container {
 
 footer .social-link {
 
-    padding: auto 3rem;
+    text-align: center;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: end;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
     align-content: center;
     align-items: center;
 }
@@ -634,12 +640,11 @@ footer .social-link {
 .fab,
 .fa-facebook,
 .fa-instagram {
-    color: var(--clr_title);
+    color: var(--main-color);
 }
 
-footer .social-link li {
-    color: #fedc97;
-    padding: 0 1rem;
+footer .social-link{
+    padding: 0.2rem 1rem;
 }
 
 
@@ -776,6 +781,19 @@ footer .social-link li {
         align-self: start;
     }
 /*****FIN CONTACT FORMULAIRE*****/
+       
+
+/*****SECTION FOOTER *****/
+footer {
+            padding: 2rem 6rem;
+            font-size: 1.8rem;
+        }
+
+footer .social-link {
+    padding: 1rem 1rem;
+}
+/************************/
+
 
 /*****SECTION SCROLLUP *****/
 #haut {
