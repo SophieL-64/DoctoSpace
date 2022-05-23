@@ -9,19 +9,19 @@
 
 ## les outils a disposition    
 
-+figma
-[accès figma](https://doctospace.netlify.app, 'site figma') 
-+trello
-[accès trello](https://doctospace.netlify.app, 'site trello') 
-+google sheet
++figma    
+[accès figma](https://www.figma.com/file/n7KMbvcr5b4YnSJH4Cv6qc/DoctoSpace, 'site figma') 
++trello  
+[accès trello](https://trello.com/b/m8uNAXUf/wildcode, 'site trello') 
++google sheet  
 [accès slide](https://doctospace.netlify.app, 'site doctospace') 
 
 
-## 💪 Solution 
+## 💪 Solution  
 [accès doctospace](https://doctospace.netlify.app, 'site doctospace')  
-![screenshot](https://imgur.com/yWzNY5Y.png, 'screenshot doctospace')  
+![screenshot](https://i.imgur.com/yWzNY5Yl.png, 'screenshot doctospace')  
 
-## Commande
+## Commande  
 ```npm run start```
 
 
