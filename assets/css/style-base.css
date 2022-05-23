@@ -119,6 +119,10 @@ section {
     font-style: italic;
 }
 
+.bg-main-color{
+    fill: var(--clr_title);
+}
+
 /******FIN GENERIQUE***********/
 
 
@@ -158,6 +162,9 @@ a>svg {
     display: none;
     position: fixed;
     bottom: 20px;
+
+
+
     right: 30px;
     z-index: 99;
     border: none;
@@ -265,7 +272,7 @@ li:first-child {
 
 .navSousItemdrop_active {
     box-shadow: 0 0 10px var(--clr_secondary_font);
-    background-color: transparent;
+    background-color: var(--main-color);
     border-radius: 4px;
     width: 12rem;
     padding: 1rem;
@@ -278,7 +285,7 @@ li:first-child {
 
 .navMenu li:hover,
 .navMenu li:focus {
-    background-color: var(--clr_hover);
+    background-color: var(--secondary-color);
     border-radius: 5px;
 }
 
@@ -287,8 +294,9 @@ li:first-child {
     display: none;
     /* background-image: url('../img/icons8-scroll-up-50.png'); */
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+   
+    bottom: 10px;
+    right: 10px;
     z-index: 99;
     border: none;
     outline: none;
@@ -300,8 +308,11 @@ li:first-child {
     padding: 15px;
 }
 
-#haut:hover {
-    background-color: var(--dark-brown);
+
+#haut:hover svg {
+    /* background-color: var(--dark-brown); */
+    fill: #0063a1;
+    
 }
 /*****FIN NAVBARRE HEADER******/
 
@@ -646,11 +657,6 @@ footer .social-link li {
             position: relative;
         }
 
-        #haut {
-            bottom: 10px;
-            right: 0px;
-        }
-
         header>h1 {
             text-align: center;
             line-height: 2.5em;
@@ -684,6 +690,7 @@ footer .social-link li {
         }
 
         .navMenu {
+            background-color: var(--main-font-color);
             margin: 0;
             position: fixed;
             z-index: 99;
@@ -768,6 +775,14 @@ footer .social-link li {
         align-self: start;
     }
 /*****FIN CONTACT FORMULAIRE*****/
+
+/*****SECTION SCROLLUP *****/
+#haut {
+    bottom: 30px;
+    right: 20px;
+}
+/*****FIN  SCROLLUP *****/
+
 }
 /*****FIN DESKTOP*****/
 
