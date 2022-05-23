@@ -1,0 +1,82 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing);
+    /* background: linear-gradient(-45deg, #003454, #0063A1); */
+   
+    border-radius: 8px;
+    font-family: var(--text-font-family)
+
+    /* background-attachment: fixed;
+    background-image: url('../img/haeder-img.jpg') center center/cover; */
+
+
+}
+
+ #contact-box h2{
+    color:var(--secondary-font-color);
+}
+
+#contactForm {
+    padding-top:calc(var(--spacing)*4);
+    width:80%;
+}
+
+#contactForm label {
+    font-family: var(--text-font-family);
+    line-height: 2;
+    color:var(--secondary-font-color); 
+}
+
+#contactForm button {
+    background:var(--secondary-color) ; 
+    color:var(--secondary-font-color); 
+    border: none;
+    border-radius: 5px;
+    padding: 8px 8px;
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding:var(--spacing);
+margin-bottom:var(--spacing);
+border-radius: 5px;
+}
+
+textarea {
+    min-height:150px;
+    resize: vertical;
+}
+
+
+@media screen and (min-width:560px) {
+    #contact{
+        align-items: start;
+        margin:  0;
+        padding:var(--spacing);
+        /* background-color:var(--main-color) ; */
+    
+        
+    }
+
+    #contactForm {
+        margin:calc(var(--spacing)*2) auto;
+        display: flex;
+        max-width:600px;
+        flex-flow:column;
+        align-content: start;
+        width: 100%;
+        padding-top:calc(var(--spacing)*2);
+    }
+
+        #contactForm label {
+            align-self: start; 
+        }
+}
