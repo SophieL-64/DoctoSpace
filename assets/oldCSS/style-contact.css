@@ -6,6 +6,8 @@
     /* background: linear-gradient(-45deg, #003454, #0063A1); */
    
     border-radius: 8px;
+    font-family: var(--text-font-family)
+
     /* background-attachment: fixed;
     background-image: url('../img/haeder-img.jpg') center center/cover; */
 
@@ -22,6 +24,7 @@
 }
 
 #contactForm label {
+    font-family: var(--text-font-family);
     line-height: 2;
     color:var(--secondary-font-color); 
 }
@@ -36,6 +39,7 @@
     height: 2rem;
     cursor: pointer;
 }
+
 
 input[type="text"],
 input[type="email"],
