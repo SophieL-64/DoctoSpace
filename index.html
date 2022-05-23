@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctoSpace - Homepage</title>
-    <link rel="stylesheet" href="./src/css/style-base.css">
-    <link rel="stylesheet" href="./src/css/contact-style.css">
-    <link rel="stylesheet" href="./src/css/style-nav.css" />
-    <link rel="stylesheet" href="./src/css/slider.css" />
-    <link rel="stylesheet" href="./src/css/style-testimonials.css" />
-    <link rel="stylesheet" href="./src/css/style-footer.css" />
-    <link rel="stylesheet" media="screen and (min-width:390px)" href="./src/css/style.desktop-testimonials.css"/>
+    <link rel="stylesheet" href="./assets/css/style-base.css">
+    <link rel="stylesheet" href="./assets/css/concept.css">
+    <link rel="stylesheet" href="./assets/css/style-contact.css">
+    <link rel="stylesheet" href="./assets/css/style-nav.css" />
+    <link rel="stylesheet" href="./assets/css/slider.css" />
+    <link rel="stylesheet" href="./assets/css/style-testimonials.css" />
+    <link rel="stylesheet" href="./assets/css/style-footer.css" />
+    <link rel="stylesheet" media="screen and (min-width:390px)" href="./assets/css/style.desktop-testimonials.css"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap" rel="stylesheet"/>
 
-    <script src="src/js/testimonials.js" defer></script>
-    <script src="src/js/contact-script.js" defer></script>
-    <script src="src/js/main.js" defer></script>
-    <script src="src/js/slider.js" defer></script>
+    <script src="./testimonials.js" defer></script>
+    <script src="./contact-script.js" defer></script>
+    <script src="./main.js" defer></script>
+    <script src="./slider.js" defer></script>
   </head>
   <body>
     <header class="parallax-effect">
@@ -82,19 +83,22 @@
       </nav>
       <h1>DOCTOSPACE</h1>
       <h3>Voyages thérapeutiques interplanétaires</h3>
-      <h2>Rester, c'est s'enterrer</h2>
+      <h2>Rester,<br/> c'est s'enterrer</h2>
     </header>
 
-    <section>
+    <section class="parallax-effect2 " id="concept">
       <h2>Le concept</h2>
-      <p>Quels que soient vos maux, une solution existe dans le firmament.</p>
-      <p>Vous n'imaginez pas tout le bien que peut vous apporter un rail de poudre lunaire ou une intraveineuse de salive de
-        Ti'ka-'s's.</p>
-      <p>Que vous soyez au stade terminal ou enclin au tourisme bien-être, embarquez pour l'un de nos circuits dépaysants et
-        revigorants.</p>
+      <div class="concept">
+        <p>Quels que soient vos maux, une solution existe dans le firmament.</p>
+        <p>Vous n'imaginez pas tout le bien que peut vous apporter un rail de poudre lunaire ou une intraveineuse de salive de
+          Ti'ka-'s's.</p>
+        <p>Que vous soyez au stade terminal ou enclin au tourisme bien-être, embarquez pour l'un de nos circuits dépaysants et
+          revigorants.</p>
+      </div>
+     
     </section>
 
-    <section >
+    <section class="parallax-effect">
       
       <!--slide 
             si class pour la section alors background image-->
@@ -104,27 +108,27 @@
           <!-- slide 1 -->
           <div class="slide" id="slide1">
             <a href="https://www.google.com"
-              ><img src="src/img/img-slider/planet1.jpg" alt=""
+              ><img src="./assets/img/img-slider/planet1.jpg" alt=""
             /></a>
           </div>
           <!-- slide 2 -->
           <div class="slide" id="slide1">
             <a href="https://www.google.com"
-              ><img src="src/img/img-slider/planet2.jpg" alt=""
+              ><img src="./assets/img/img-slider/planet2.jpg" alt=""
             /></a>
           </div>
 
           <!-- slide 3 -->
           <div class="slide" id="slide1">
             <a href="https://www.google.com"
-              ><img src="src/img/img-slider/planet3.jpg" alt=""
+              ><img src="./assets/img/img-slider/planet3.jpg" alt=""
             /></a>
           </div>
 
           <!-- slide 4 -->
           <div class="slide" id="slide1">
             <a href="https://www.google.com"
-              ><img src="src/img/img-slider/planet4.jpg" alt=""
+              ><img src="./assets/img/img-slider/planet4.jpg" alt=""
             /></a>
           </div>
 
@@ -137,7 +141,7 @@
 
   
 
-    <section class="parallax-effect testimonials">
+    <section class="testimonials  parallax-effect2">
       <!-- effet parallaxe -->
       <!-- tesmonials -->
       <h2>Testimonials</h2>
@@ -219,22 +223,22 @@
       </div>
     </section>
 
-    
-  <section  id="contact-box">
-      <h2>Contact</h2>
-        <div id="contact">
-        <form id="contactForm">
-          <label for="name">Name:</label><br />
-          <input type="text" id="name" name="name" placeholder=" Enter your name " /><br />
-          <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" placeholder=" Enter your Email " /><br />
-          <label for="message">Message:</label><br />
-          <textarea id="message" name="message"></textarea>
-          <br /><br />
-          <button type="submit">Send</button>
-        </form>
-        </div>
-    </section>
+   
+    <section class="parallax-effect" id="contact-box">
+        <h2>Contact</h2>
+          <div id="contact">
+          <form id="contactForm">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" placeholder=" Enter your name " /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" placeholder=" Enter your Email " /><br />
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message"></textarea>
+            <br /><br />
+            <button type="submit">Send</button>
+          </form>
+          </div>
+      </section>
 
     <footer>
       <div class="flex-container">
@@ -250,15 +254,14 @@
     </footer>
     
 
-    <!-- return button -->
-    <div>
-      <button onclick="retourHaut()" id="haut" title="Retour haut de page">
+    <!-- Scroll up button to nav -->
+
+      <div onclick="retourHaut()" id="haut" title="Retour haut de page">
         <svg viewBox="0 0 576 512" width="40">
           <path
             d="M568.2 336.3c-13.12-17.81-38.14-21.66-55.93-8.469l-119.7 88.17h-120.6c-8.748 0-15.1-7.25-15.1-15.99c0-8.75 7.25-16 15.1-16h78.25c15.1 0 30.75-10.88 33.37-26.62c3.25-20-12.12-37.38-31.62-37.38H191.1c-26.1 0-53.12 9.25-74.12 26.25l-46.5 37.74L15.1 383.1C7.251 383.1 0 391.3 0 400v95.98C0 504.8 7.251 512 15.1 512h346.1c22.03 0 43.92-7.188 61.7-20.27l135.1-99.52C577.5 379.1 581.3 354.1 568.2 336.3zM160 176h64v64C224 248.8 231.2 256 240 256h64C312.8 256 320 248.8 320 240v-64h64c8.836 0 16-7.164 16-16V96c0-8.838-7.164-16-16-16h-64v-64C320 7.162 312.8 0 304 0h-64C231.2 0 224 7.162 224 16v64H160C151.2 80 144 87.16 144 96v64C144 168.8 151.2 176 160 176z"
           />
         </svg>
-      </button>
     </div>
     
   </body>
