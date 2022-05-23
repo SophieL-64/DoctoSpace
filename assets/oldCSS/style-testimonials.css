@@ -3,7 +3,8 @@
   display: none;
   color: var(--secondary-font-color);
   font-family: var(--main-font-family);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .testimonial p {

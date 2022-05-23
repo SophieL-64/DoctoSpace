@@ -12,7 +12,7 @@
 
 @media screen and (min-width: 560px) {
     #concept {
-        height:40vh; 
+        height:auto; 
     }
 
     .concept{
