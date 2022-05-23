@@ -53,7 +53,7 @@
 
 @media screen and (min-width: 560px) {
   .advice {
-  font-size: 1rem;
+    font-size: 1rem;
   }
 
   .bandeau-container {
@@ -61,18 +61,18 @@
   }
 
   .circuit-container {
-  height: 600px;
+    height: 600px;
   }
 
   .circuit-title {
-  font-size: 2rem;
+    font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
- .circuit-container {
-  height: 800px;
-}
+  .circuit-container {
+    height: 800px;
+  }
 }
 
 @media screen and (min-width: 560px) {
@@ -113,8 +113,8 @@
     }
 
     #contact-link:hover {
-     background-color: goldenrod;
-     cursor: grab; 
+      background-color: goldenrod;
+      cursor: grab;
     }
 
     .result-txt {
