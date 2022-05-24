@@ -44,7 +44,7 @@ li {
 /*** GENERIQUE*********/
 body {
     --main-color: #0063a1;
-    --secondary-color: #543100;
+    --secondary-color: rgb(236, 138, 10);
     --third-color: #16113c;
 
 
@@ -65,7 +65,7 @@ body {
 
 body.dark {
     --main-color: #100347;
-    --secondary-color: #543100;
+      --secondary-color: rgb(236, 138, 10);
     --third-color: #16113c;
 
     --main-font-color: rgb(255, 255, 255);
