@@ -197,7 +197,7 @@ a > svg {
 }
 
 #haut:hover {
-  background-color: var(--dark-brown);
+  background-color: var(--secondary-color);
 }
 
 .color-slider {
@@ -304,7 +304,7 @@ li:first-child {
 
 .navMenu li:hover,
 .navMenu li:focus {
-  background-color: var(--secondary-color);
+  background-color: rgb(236, 138, 10);
   border-radius: 5px;
 }
 
