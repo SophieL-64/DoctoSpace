@@ -248,7 +248,7 @@ li:first-child {
 }
 
 .nav {
-    border-bottom: 1px solid var(--clr_secondary_font);
+    /* border-bottom: 1px solid var(--clr_secondary_font); */
 }
 
 .navToggle {
@@ -737,6 +737,7 @@ footer .social-link {
   }
 
   .navMenu {
+      font-weight: 700;
       color: var(--text-font-color);
       background-color: var(--main-color);;
       margin: 0;
@@ -746,7 +747,7 @@ footer .social-link {
       right: 0;
       left: 0;
       height: 80px;
-      box-shadow: 0 1px 0 #f7f7f7;
+      /* box-shadow: 0 1px 0 #f7f7f7; */
   }
 
   .nav .navToggle {
