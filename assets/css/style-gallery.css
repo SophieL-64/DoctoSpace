@@ -9,6 +9,7 @@ body {
 .gallery-container {
   padding: 40px;
   justify-content: center;
+  margin-top: -200px;
 }
 .gallery {
   display: grid;
@@ -73,6 +74,9 @@ body {
   .gallery__item--11 {
     grid-row-start: 3;
     grid-row-end: 5;
+  }
+  .footer-container {
+    margin-top: 300px;
   }
 }
 @media screen and (max-width: 768px) {
