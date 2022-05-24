@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctoSpace - Homepage</title>
     <link rel="stylesheet" href="./assets/css/style-base.css" />
+    <link rel="stylesheet" href="./assets/css/tabs.css ">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -15,6 +16,7 @@
 
     <script src="./index.js" defer></script>
     <script src="./slider.js" defer></script>
+    <script src="./script.js" defer></script>
     <script src="./testimonials.js" defer></script>
     <script src="./contact.js" defer></script>
     <script src="./darkLight.js" defer></script>
@@ -102,6 +104,40 @@
           Que vous soyez au stade terminal ou enclin au tourisme bien-être,
           embarquez pour l'un de nos circuits dépaysants et revigorants.
         </p>
+      </div>
+    </section>
+
+    <!-- Tabs container -->
+    <section class="tabs-container " >
+      <h2>Nos offres du moment</h2>
+      <ul class="tabs">
+        <li data-tab-target="#pathologie1" class="active tab">Acné</li>
+        <li data-tab-target="#pathologie2" class="tab">Insomnie</li>
+        <li data-tab-target="#pathologie3" class="tab">Affres de l'âge</li>
+      </ul>
+      <div class="tab-content">
+        <div id="pathologie1" data-tab-content class="active"> <!-- active by default -->
+          <div class="contain"> <h3>Acné</h3>
+            <img src="./assets/img/patho/acné.jpg" alt="">
+            <a href="pathoPlanet1.html" >+ d'infos...</a>
+            <p>Vous vous rendrez sur l’une des rares îles de Sebumoria, où un DoctoGenius vous harnachera à un système de poulies afin de vous placer en suspension à 5 cm au-dessus de l’eau*.</p>
+          </div>
+        </div>
+        <div id="pathologie2" data-tab-content>
+          <div class="contain"> <h3>Insomnie</h3>
+            <img src="./assets/img/patho/insomnia.jpg" alt="">
+            <a href="pathoPlanet2.html">+ d'infos...</a>
+            <p>Révehy’papapa présente une particularité tout-à-fait intéressante puisque son atmosphère est composée en grande majorité de chloroforme esveillophage - cette molécule est semblable à celle que nous trouvons sur terre, à ceci près qu’elle réduit de manière permanente votre temps d’éveil.</p>
+          </div>
+        </div>
+        <div id="pathologie3" data-tab-content>
+          <div class="contain">
+            <h3>Affres de l'âge</h3>
+            <img src="./assets/img/patho/oldGuy.jpg" alt="">
+            <a href="pathoPlanet3.html">+ d'infos...</a>
+            <p>L’action anti-âge la plus perfectionnée de la planète, sur une autre planète.</p>
+          </div>
+        </div>
       </div>
     </section>
 
