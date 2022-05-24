@@ -29,6 +29,12 @@
     color:var(--secondary-font-color); 
 }
 
+#contactForm #select {
+    padding:var(--spacing);
+    margin-bottom:var(--spacing);
+    color:var(--main-font-color); 
+}
+
 #contactForm button {
     background:var(--secondary-color) ; 
     color:var(--secondary-font-color); 
