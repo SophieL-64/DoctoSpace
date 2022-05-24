@@ -10,14 +10,15 @@
 ## les outils a disposition    
 
    
-[accès figma](https://www.figma.com/file/n7KMbvcr5b4YnSJH4Cv6qc/DoctoSpace, 'site figma')  
-[accès trello](https://trello.com/b/m8uNAXUf/wildcode, 'site trello')   
-[accès slide](https://doctospace.netlify.app, 'site doctospace')  
+[accès figma](https://www.figma.com/file/n7KMbvcr5b4YnSJH4Cv6qc/DoctoSpace 'site figma')  
+[accès trello](https://trello.com/b/m8uNAXUf/wildcode 'site trello')   
+[accès slide](https://doctospace.netlify.app 'site doctospace')  
 
 
 ## 💪 Solution  
-[accès doctospace](https://doctospace.netlify.app, 'site doctospace')  
-![screenshot](https://imgur.com/dQdkBos.png, 'screenshot doctospace')  
+[accès doctospace](https://doctospace.netlify.app 'site doctospace')  
+![screenshot](https://imgur.com/rB3AofZ.pngs 'screenshot doctospace')  
+![screenshot](https://imgur.com/5Ftd00a.png 'screenshot doctospace')  
 
 ## Commande  
 ```npm run start```
