@@ -1,5 +1,5 @@
 body {
-  --secondary-color:red;
+  --secondary-color: rgb(236, 138, 10);
   min-height: 600px;
   background-attachment: fixed;
   background-position: bottom;
