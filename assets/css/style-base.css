@@ -51,7 +51,9 @@ body {
     --main-font-color: rgb(253, 253, 253);
     --secondary-font-color: white;
 
-    font-family: var(--text-font-family);
+    font-family:"Courier New",
+      Courier,
+      monospace;
     font-weight: 400;
     font-size: 20px;
     color: var(--clr_main_font);
@@ -68,6 +70,9 @@ body.dark {
 
     --main-font-color: rgb(255, 255, 255);
     --secondary-font-color: white;
+    font-family: "Courier New",
+      Courier,
+      monospace;
     color: var(--main-font-color);
     background: var(--main-color);
 }
@@ -78,7 +83,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--title-font-family);
+  font-family: "Oswald",
+    sans-serif;
 }
 
 h2 {

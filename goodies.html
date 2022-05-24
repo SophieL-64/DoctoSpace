@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./assets/css/style-base.css">
     <link rel="stylesheet" href="./assets/css/style-goodies.css">
     <title>Boutique</title>
+
+    <script src="index.js" defer></script>
+    <script src="goodies.js" defer></script>
+    <script src="./darkLight.js" defer></script>
 </head>
 <body>
   <nav class="nav">
@@ -95,7 +99,15 @@
       </button>
     </div>
 
-    <script src="goodies.js"></script>
-    <script src="index.js"></script>
+    <div id="toggleDarkLight">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+    
   </body>
 </html>
