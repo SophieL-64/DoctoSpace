@@ -1,4 +1,8 @@
-* {
+body{
+  --secondary-color:rgb(236, 138, 10);
+}
+
+*{
     padding: 0px;
     margin: 0px; 
     /* font-family: var(--main-font-family) */
@@ -26,6 +30,7 @@
     padding: 8px;
     color: var(--secondary-font-color);
     border-radius: 25px;
+    margin: 0.8rem;
 }
 
 .tab.active {
@@ -69,6 +74,7 @@
     background-color: var(--secondary-color);
     border-radius: 25px;
     padding: 1rem;
+    margin:1.2rem;
 }
 @media screen and (min-width:560px) {
     
@@ -79,5 +85,12 @@
 
 .tabs {
     margin-left: 25%;
+ 
     }
+.tab{
+    margin: 1rem;
+}
+
+
+  
 }
