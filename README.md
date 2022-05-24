@@ -1,7 +1,7 @@
 # DoctoSpace - Votre site de voyages thérapeutiques interplanétaire  
 
-👉 Le defi à realise  
-+Creer un site web client sur la thematique de notre choix.
+👉 Le defi à realiser
++ Créer un site web client sur la thématique de notre choix.
 
 **pas de Jquery**  
 
