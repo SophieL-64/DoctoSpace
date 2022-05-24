@@ -9,9 +9,9 @@
   --third-color: #0c0c0c;
 
   --clr_main_font: rgb(216, 214, 214);
-  --clr_secondary_font: rgb(138, 138, 138);
+  --clr_secondary_font:#d6d2f7;
   --clr_hover: rgb(178, 101, 201);
-  --clr_title: rgb(30, 224, 78);
+  --clr_title:rgb(236, 138, 10);;
   --clr_logo: rgb(10, 134, 236);
 
   --width-mobile: 400px;
@@ -217,7 +217,7 @@ header > h1 {
   text-align: center;
   line-height: 3.5em;
   font-size: 3rem;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 var(--clr_title),
+  text-shadow: 0 1px 0 var(--clr_title), 0 2px 0 var(--clr_title), 0 3px 0 var(--clr_title),
     0 4px 0 var(--clr_title), 0 5px 0 var(--clr_title), 0 6px 0 var(--clr_title),
     0 20px 30px rgba(0, 0, 0, 0.5);
 }
@@ -227,14 +227,16 @@ header h2 {
   color: var(--clr_secondary_font);
   font-size: 1.5rem;
   line-height: 2.5em;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 20px 30px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 0 var(--clr_title),
+    0 2px 0 var(--clr_title), 0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
 header h3 {
   text-align: center;
   color: var(--clr_secondary_font);
   font-size: 1rem;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 20px 30px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 0 var(--clr_secondary_font),
+    0 2px 0 var(--clr_title), 0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
 label > svg {
@@ -724,7 +726,7 @@ footer .social-link {
     text-align: center;
     line-height: 2.5em;
     font-size: 7rem;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 var(--clr_title),
+    text-shadow: 0 1px 0 var(--clr_title), 0 2px 0 var(--clr_title), 0 3px 0 var(--clr_title),
       0 4px 0 var(--clr_title), 0 5px 0 var(--clr_title),
       0 6px 0 var(--clr_title), 0 20px 30px rgba(0, 0, 0, 0.5);
   }
@@ -732,7 +734,7 @@ footer .social-link {
   header h2 {
     text-align: center;
     font-size: 4rem;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 var(--clr_title),
+    text-shadow: 0 1px 0 var(--clr_title), 0 2px 0 var(--clr_title), 0 3px 0 var(--clr_title),
       0 4px 0 var(--clr_title), 0 5px 0 var(--clr_title),
       0 6px 0 var(--clr_title), 0 20px 30px rgba(0, 0, 0, 0.5);
   }
@@ -740,7 +742,7 @@ footer .social-link {
   header h3 {
     text-align: center;
     font-size: 2rem;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 var(--clr_title),
+    text-shadow: 0 1px 0 var(--clr_title), 0 2px 0 var(--clr_title), 0 3px 0 var(--clr_title),
       0 4px 0 var(--clr_title), 0 5px 0 var(--clr_title),
       0 6px 0 var(--clr_title), 0 20px 30px rgba(0, 0, 0, 0.5);
   }
