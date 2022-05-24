@@ -1,22 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="assets/css/concept.css">
+    <link rel="stylesheet" href="./assets/css/style-base.css" />
+    <script src="./index.js" defer></script>
     <title>Le concept DoctoSpace</title>
-</head>
+  </head>
+
 <body>
-    <section>
-        <div class="container">
+    <nav class="nav">
+        <input type="checkbox" id="navCheckbox" class="navCheckbox" />
+        <label for="navCheckbox" class="navToggle">
+          <svg class="menu" viewBox="0 0 448 512" width="100" title="bar">
+            <path
+              d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+            />
+          </svg>
+          <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+            <path
+              d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"
+            />
+          </svg>
+        </label>
+        <ul class="navMenu">
+          <li>
+            <a href="index.html">
+              <img
+                id="logo"
+                width="30px"
+                height="30px"
+                alt="logo"
+                src="./assets/img/Logo_fusee_un_peu_penchee.png"
+              />
+
+              <!-- <svg id="logo" viewBox="0 0 640 512" width="100">
+                <path d="M129.1 480H128V384H352L245.2 448.1C210.4 468.1 170.6 480 129.1 480zM352 128H128V32H129.1C170.6 32 210.4 43.03 245.2 63.92L352 128zM104 128C130.2 128 153.4 140.6 168 160H456C525.3 160 591 182.7 635.2 241.6C641.6 250.1 641.6 261.9 635.2 270.4C591 329.3 525.3 352 456 352H168C153.4 371.4 130.2 384 104 384H96V480H80C53.49 480 32 458.5 32 432V384H40C17.91 384 0 366.1 0 344V168C0 145.9 17.89 128 39.96 128H32V80C32 53.49 53.49 32 80 32H96V128H104zM476.4 208C473.1 208 472 209.1 472 212.4V299.6C472 302 473.1 304 476.4 304C496.1 304 512 288.1 512 268.4V243.6C512 223.9 496.1 208 476.4 208z"/>
+              </svg> -->
+            </a>
+          </li>
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="concept.html">Concept</a>
+          </li>
+          <li class="navSousMenu">
+            <a class="destination" onclick="toggle()" href="#">Destinations</a>
+            <ul id="sousMenu" class="navSousItemdrop">
+              <li>
+                <a href="pathoPlanet2.html">Insomnie</a>
+              </li>
+              <li>
+                <a href="pathoPlanet1.html">Acné</a>
+              </li>
+              <li>
+                <a href="pathoPlanet3.html">Affres de l'âge</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="gallery.html">Galerie</a>
+          </li>
+          <li>
+            <a href="goodies.html">Boutique</a>
+          </li>
+        </ul>
+      </nav>
+    <section class="section-concept">
+        <div class="container-concept">
             <div class="row" id="row-1">
+                <div class="concept-title">
+                    <h1>DoctoConcept</h1>
+                  </div>
                 <div class="left-img" id="img-1">
                 </div>
                 <div class="right-txt" id="txt-1">
                     <div class="content">
-                        <h1>Vivez mieux</h1>
-                        <p>Tout le monde a besoin d'un voyage DoctoSpace, que ce soit pour guérir absolument tous les maux qui existent ou bien pour profiter de vacances bienfaitrices pour le corps comme pour l'esprit.</p>
+                        <h2 class="concept-h2">Vivez mieux</h2>
+                        <p class="concept-p">Tout le monde a besoin d'un voyage DoctoSpace, que ce soit pour guérir absolument tous les maux qui existent ou bien pour profiter de vacances bienfaitrices pour le corps comme pour l'esprit.</p>
                     </div>
                 </div>
             </div>
@@ -25,8 +95,8 @@
                 </div>
                 <div class="left-txt">
                     <div class="content">
-                        <h1>Voyez loin</h1>
-                        <p>Le train-train quotidien vous a embourbé dans une vie qui ne vous ressemble plus. Et en plus de ça, on vient de vous diagnostiquer un cancer... Plutôt que de perdre la vie sur Terre, embellissez-la dans les étoiles !</p>
+                        <h2 class="concept-h2">Voyez loin</h2>
+                        <p class="concept-p">Le train-train quotidien vous a embourbé dans une vie qui ne vous ressemble plus. Et en plus de ça, on vient de vous diagnostiquer un cancer... Plutôt que de perdre la vie sur Terre, embellissez-la dans les étoiles !</p>
                     </div>
                 </div>
             </div>
@@ -35,8 +105,8 @@
                 </div>
                 <div class="right-txt">
                     <div class="content">
-                        <h1>Voyagez léger</h1>
-                        <p>Les possession terrestres, en particulier les comptes bancaires, sont un fardeau et un frein à votre guérison ainsi qu'à votre confort touristique. Nous vous en délestons pour un voyage qui aura des conséquences durables.</p>
+                        <h2 class="concept-h2">Voyagez léger</h2>
+                        <p class="concept-p">Les possession terrestres, en particulier les comptes bancaires, sont un fardeau et un frein à votre guérison ainsi qu'à votre confort touristique. Nous vous en délestons pour un voyage qui aura des conséquences durables.</p>
                     </div>
                 </div>
             </div>
@@ -45,12 +115,49 @@
                 </div>
                 <div class="left-txt">
                     <div class="content">
-                        <h1>Revenez changé</h1>
-                        <p>À la descente de la DoctoRocket, vous commencerez à sentir les bienfaits de la planète choisie. À votre retour sur Terre, nous nous occupons de vous reloger dans l'un de nos DoctoFlats de luxe de 10 000 mm².</p>
+                        <h2 class="concept-h2">Revenez changé</h2>
+                        <p class="concept-p">À la descente de la DoctoRocket, vous commencerez à sentir les bienfaits de la planète choisie. À votre retour sur Terre, nous nous occupons de vous reloger dans l'un de nos DoctoFlats de luxe de 10 000 mm².</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-copyright">
+            <p>Fait avec 💓 . Copyright Ⓒ - DoctoSpace - 2022</p>
+          </div>
+          <div class="social-link">
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- DEBUT ABSOLUTE BUTTON -->
+      <!-- Scroll up button to nav -->
+      <div onclick="retourHaut()" id="haut" title="Retour haut de page">
+        <svg class="bg-main-color" viewBox="0 0 512 512" width="30">
+          <path
+            d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z"
+          />
+        </svg>
+      </div>
+  
+      <div id="toggleDarkLight">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
 </body>
 </html>

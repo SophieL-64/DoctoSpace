@@ -1,7 +1,6 @@
 /* GLOBAL*/
 * {
-
-
+  font-family: var(--main-font-family);
 }
 
 p{

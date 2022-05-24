@@ -1,31 +1,55 @@
-/*#concept{
-    background-color: inherit;
-}
- .concept {
-    flex-flow:column;
-    justify-content:center;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-    text-align: left;
- }
-*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 
 :root {
-    box-sizing: border-box;
+  --main-color: #0063a1;
+  --secondary-color: #543100;
+  --third-color: #0c0c0c;
+
+  --clr_main_font: rgb(216, 214, 214);
+  --clr_secondary_font: rgb(138, 138, 138);
+  --clr_hover: rgb(178, 101, 201);
+  --clr_title: rgb(30, 224, 78);
+  --clr_logo: rgb(10, 134, 236);
+
+  --width-mobile: 400px;
+
+  --title-font-family: "Oswald", sans-serif;
+  --main-font-family: "Courier New", Courier, monospace;
+  /* --third-font-family: "Raleway", Arial, sans-serif; */
+  --main-font-size: 14px;
+  --spacing: 8px;
+
+  --corner-img-1: 8px;
+  --corner-img-2: 12px;
+  box-sizing: border-box;
 }
 
-section {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+* {
+    font-family: var(--main-font-family);
+}
+
+.concept-h2 {
+    font-family: var(--title-font-family);
+    text-align: center;
+}
+
+.concept-p {
+    font-family: var(--main-font-family);
+}
+
+.concept-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: calc(var(--main-font-size)*2);
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
-    align-items: center;
+   
     justify-content: center;
 }
 
@@ -48,7 +72,7 @@ section {
 .left-img,
 .right-img {
     width: 100%;
-    height: 150px;
+    height: 250px;
     padding: 30px;
     background-size: cover;
 }
@@ -65,6 +89,10 @@ section {
     color: white;
 }
 
+.section-concept {
+    padding: 0;
+}
+
 @media screen and (min-width: 560px) {
    /* #concept {
         height:auto; 
@@ -76,9 +104,14 @@ section {
         line-height: 3rem;
         width:100%;   
     }*/
+    .concept-title {
+        text-align: center;
+        margin: 100px;
+        font-size: calc(var(--main-font-size)*5);
+    }
 
-    .container {
-        width: 90%;
+    .container-concept {
+        width: 100%;
         max-width: 1000px;
         margin: 0 auto;
         display: flex;
@@ -93,14 +126,15 @@ section {
     .left-img,
     .right-img {
         width: 50%;
-        height: 200px;
+        height: 250px;
         padding: 30px;
         border-radius: 20px;
         background-size: cover;
+        box-shadow: 2px 2px 5px rgb(236, 138, 10);
     }
 
     .left-txt {
-        margin: -100px 0 150px 0;
+        margin: -50px 0px 150px 50px;
         float: left;
         background: linear-gradient(45deg, #0063A1, #003C61, #0063A1);
     }
@@ -124,7 +158,7 @@ section {
     }
 
     .right-txt {
-        margin: 200px 0 150px 0;
+        margin: 175px 53px 150px 0;
         float: right;
         background: linear-gradient(45deg, #003C61, #0063A1, #003C61);
     }
@@ -134,5 +168,14 @@ section {
     #row-3,
     #row-4 {
         position: relative;
+    }
+
+    .section-concept {
+        margin-top: 50px;
+        width: 100%;
+        background-image: url('../img/haeder-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 75%;
     }
 }

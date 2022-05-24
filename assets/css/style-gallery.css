@@ -1,3 +1,7 @@
+* {
+  font-family: var(--main-font-family);
+}
+
 body {
   background-image: url("../img/haeder-img.jpg");
   min-height: 600px;

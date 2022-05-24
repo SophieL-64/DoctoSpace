@@ -1,4 +1,8 @@
 /***************** animation Titre doctoshop *****************/
+* {
+font-family: var(--main-font-family);
+}
+
 #container-title,
 #greetings {
   display: flex;

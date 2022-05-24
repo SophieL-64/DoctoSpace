@@ -5,7 +5,7 @@
 
 :root {
   --main-color: #0063a1;
-  --secondary-color: #543100;
+  --secondary-color: rgb(236, 138, 10);
   --third-color: #0c0c0c;
 
   --clr_main_font: rgb(216, 214, 214);
