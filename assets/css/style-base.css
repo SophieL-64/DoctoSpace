@@ -638,6 +638,7 @@ footer .flex-container {
 
 footer .social-link {
   text-align: center;
+  color : var(--secondary-color);
   display: flex;
   width: 100%;
   flex-flow: row wrap;
