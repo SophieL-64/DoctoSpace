@@ -1,0 +1,138 @@
+/*#concept{
+    background-color: inherit;
+}
+ .concept {
+    flex-flow:column;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+ }
+*/
+
+:root {
+    box-sizing: border-box;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-1 {
+    background-image: url("../img/concept/concept1.jpg");
+}
+
+#img-2 {
+    background-image: url("../img/concept/concept2.jpg");
+}
+
+#img-3 {
+    background-image: url("../img/concept/concept3.jpg");
+}
+
+#img-4 {
+    background-image: url("../img/concept/concept4.jpg");
+}
+
+.left-img,
+.right-img {
+    width: 100%;
+    height: 150px;
+    padding: 30px;
+    background-size: cover;
+}
+
+.right-txt,
+.left-txt {
+    width: 100%;
+    min-height: 150px;
+    background: linear-gradient(45deg, #0063A1, #003C61, #0063A1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+}
+
+@media screen and (min-width: 560px) {
+   /* #concept {
+        height:auto; 
+    }
+
+    .concept{
+        text-align: center;
+        margin-top: 5rem;
+        line-height: 3rem;
+        width:100%;   
+    }*/
+
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-img {
+        position: absolute;
+        float: left;
+    }
+
+    .left-img,
+    .right-img {
+        width: 50%;
+        height: 200px;
+        padding: 30px;
+        border-radius: 20px;
+        background-size: cover;
+    }
+
+    .left-txt {
+        margin: -100px 0 150px 0;
+        float: left;
+        background: linear-gradient(45deg, #0063A1, #003C61, #0063A1);
+    }
+
+    .left-txt,
+    .right-txt {
+        width: 50%;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        color: white;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .right-img {
+        position: relative;
+        float: right;
+    }
+
+    .right-txt {
+        margin: 200px 0 150px 0;
+        float: right;
+        background: linear-gradient(45deg, #003C61, #0063A1, #003C61);
+    }
+
+    #row-1,
+    #row-2,
+    #row-3,
+    #row-4 {
+        position: relative;
+    }
+}
