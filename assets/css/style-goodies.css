@@ -71,7 +71,7 @@ font-family: var(--main-font-family);
 
 b {
   zoom: 150%;
-  color: red;
+  color: #ba640c;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
 }
@@ -176,7 +176,7 @@ li:first-child {
 
 .navMenu li:hover,
 .navMenu li:focus {
-  background-color: var(--secondary-color);
+  background-color: #ba640c;
   border-radius: 5px;
 }
 
@@ -229,7 +229,7 @@ li:first-child {
 .card-body h2 {
   text-align: center;
   font-size: 2rem;
-  color: rgb(247, 231, 10);
+  color: #ba640c;
   margin: 10px 0px;
 }
 .card-button {
@@ -238,7 +238,7 @@ li:first-child {
   width: 100%;
   outline: 0;
   padding: 12px;
-  color: rgb(247, 231, 10);
+  color: #ba640c;
   background-color: #000;
   text-align: center;
   cursor: pointer;
@@ -258,7 +258,8 @@ li:first-child {
   font-style: italic;
 }
 .card-price {
-  color: whitesmoke;
+  color: #ba640c;
+  font-weight: 800;
   font-size: 2rem;
 }
 
@@ -298,8 +299,6 @@ img {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: var(--dark-orange);
-    color: var(--big-black-brown);
     cursor: pointer;
     border-radius: 10px;
     font-size: 18px;
@@ -307,7 +306,7 @@ img {
   }
 
   #haut:hover {
-    background-color: var(--dark-brown);
+    background-color: #ba640c;
   }
 
   li {
@@ -476,7 +475,7 @@ img {
 
   b {
     zoom: 150%;
-    color: red;
+    color: #ba640c;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
       1px 1px 0 white;
   }
@@ -484,13 +483,15 @@ img {
   /* *********Card info************* */
   .card-body h2 {
     font-size: 1.8rem;
+    color: #ba640c;
   }
   .card-info {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     color: whitesmoke;
   }
   .card-price {
-    color: whitesmoke;
+    color: #ba640c;
+    font-weight: 900;
     font-size: 1.5rem;
   }
 
