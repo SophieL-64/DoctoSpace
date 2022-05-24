@@ -2,103 +2,116 @@ const cards = document.querySelector(".cards");
 
 const animalsToAdopt = [
   {
-    name: "Stétoscope",
-    picture: "https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "Listen to your heart as it goes to the rhythm of the pulsars.",
-    price: "$19.99",
-    shipp: "+ $100 Shipping costs"
-
+    name: "Stéthoscope",
+    picture:
+      "https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Ecouter votre coeur battre au rythme des pulsars.",
+    price: "€19.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
     name: "Origami",
-    picture: "https://images.pexels.com/photos/114977/pexels-photo-114977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "One of the best activities to fight against rheumatism",
-    price: "$9.99",
-    shipp: "+ $100 Shipping costs"
+    picture:
+      "https://images.pexels.com/photos/114977/pexels-photo-114977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Une des meilleures activités pour lutter contre les rhumatismes.",
+    price: "€9.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "Pencil...",
-    picture: "https://images.pexels.com/photos/114119/pexels-photo-114119.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "With its lead sharpened in a Murchison Meteorite!",
-    price: "$49.99",
-    shipp: "+ $100 Shipping costs"
+    name: "Crayon...",
+    picture:
+      "https://images.pexels.com/photos/114119/pexels-photo-114119.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Avec sa mine taillée dans une météorite Murchison !",
+    price: "€49.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "Bean",
-    picture: "https://images.pexels.com/photos/942732/pexels-photo-942732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "One of these coffee beans will ensure that you see the noise.",
-    price: "$19.99",
-    shipp: "+ $100 Shipping costs"
+    name: "Grain",
+    picture:
+      "https://images.pexels.com/photos/942732/pexels-photo-942732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Un seul grain vous assurera de visualiser le bruit.",
+    price: "€19.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "Lightbulb",
-    picture: "https://images.pexels.com/photos/746496/pexels-photo-746496.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "You lack of ideas? screw it here!...or there!",
-    price: "$199.99",
-    shipp: "+ $100 Shipping costs"
+    name: "Ampoule",
+    picture:
+      "https://images.pexels.com/photos/746496/pexels-photo-746496.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Vous manquez d'idée ? Allumez la lampe !",
+    price: "€199.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "Disco Ball",
-    picture: "https://images.pexels.com/photos/593467/pexels-photo-593467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "Need to get butterflies in your eyes?",
-    price: "$399.99",
-    shipp: "+ $100 Shipping costs"
+    name: "Boule Disco",
+    picture:
+      "https://images.pexels.com/photos/593467/pexels-photo-593467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Besoin de mettre des papillons dans vos yeux ?",
+    price: "€399.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "Camera",
-    picture: "https://images.pexels.com/photos/3002648/pexels-photo-3002648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "This object includes other hidden features...",
-    price: "$249.99",
-    shipp: "+ $100 Shipping costs"
+    name: "Appareil photo",
+    picture:
+      "https://images.pexels.com/photos/3002648/pexels-photo-3002648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Cet objet contient des fonctionnalités cachées...",
+    price: "€249.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "7 stones",
-    picture: "https://images.pexels.com/photos/6945064/pexels-photo-6945064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "7 stones that each have their own property.",
-    price: "$1999.99",
-    shipp: "+ $100 Shipping costs"
+    name: "7 pierres",
+    picture:
+      "https://images.pexels.com/photos/6945064/pexels-photo-6945064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "7 pierres précieuses qui ont chacune leur propriété.",
+    price: "€1999.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "Paper press",
-    picture: "https://images.pexels.com/photos/7976210/pexels-photo-7976210.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "This paperweight is not a paperweight...",
-    price: "$109.99",
-    shipp: "+ $100 Shipping costs"
+    name: "Presse-papier",
+    picture:
+      "https://images.pexels.com/photos/7976210/pexels-photo-7976210.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Ce presse-papier n'est pas un presse-papier...",
+    price: "€109.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "Vogon Skull",
-    picture: "https://images.pexels.com/photos/5095880/pexels-photo-5095880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "Vogon skull if you lack administrative inspiration.",
-    price: "$3999.99",
-    shipp: "+ $100 Shipping costs"
+    name: "Crâne de Vogon",
+    picture:
+      "https://images.pexels.com/photos/5095880/pexels-photo-5095880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Crâne de Vogon si vous manquez d'inspiration administrative.",
+    price: "€3999.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "Orange piercings",
-    picture: "https://images.pexels.com/photos/6156961/pexels-photo-6156961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "An orange, 1 piercing... why do it ?",
-    price: "$19.99",
-    shipp: "+ $100 Shipping costs"
+    name: "Piercings d'orange",
+    picture:
+      "https://images.pexels.com/photos/6156961/pexels-photo-6156961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Une orange, un percing... mais pourquoi ?",
+    price: "€19.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "4 soaps",
-    picture: "https://images.pexels.com/photos/6621468/pexels-photo-6621468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "All-natural soap with a C21H30O5 base.",
-    price: "$99.99",
-    shipp: "+ $100 Shipping costs"
+    name: "4 savons",
+    picture:
+      "https://images.pexels.com/photos/6621468/pexels-photo-6621468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Savon 100% naturel à base de C21H3005.",
+    price: "€99.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "3 tubes",
-    picture: "https://images.pexels.com/photos/6621449/pexels-photo-6621449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "These tubes contain crystals to scrub your boils.",
-    price: "$99.99",
-    shipp: "+ $100 Shipping costs"
+    name: "3 tubes à essai",
+    picture:
+      "https://images.pexels.com/photos/6621449/pexels-photo-6621449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Ces cristaux gommeront vos furoncles.",
+    price: "€99.99",
+    shipp: "+ €100 Frais de transport",
   },
   {
-    name: "Astrostop towel",
-    picture: "https://images.pexels.com/photos/3609985/pexels-photo-3609985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    info: "A towel that makes you travel aboard the Heart-in-Gold ship.",
-    price: "$6459.99",
-    shipp: "+ $100 Shipping costs"
+    name: "Serviette Astrostop",
+    picture:
+      "https://images.pexels.com/photos/3609985/pexels-photo-3609985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    info: "Une serviette pour voyager à bord du vaisseau Coeur-en-Or.",
+    price: "€6459.99",
+    shipp: "+ €100 Frais de transport",
   },
 ];
 
@@ -148,7 +161,7 @@ function createCard(title, info, imageUrl, price, shipp) {
   const cardButton = document.createElement("button");
   cardButton.classList.add("card-button");
   // set the text inside the tag to be "Adopt Now"
-  cardButton.innerHTML = "Add to Cart";
+  cardButton.innerHTML = "Ajouter au panier";
   // and add it to the cardBody
   cardBody.appendChild(cardButton);
 }
