@@ -89,7 +89,8 @@ h2 {
 }
 
 section {
-  padding: 1rem;
+  padding: 3rem 1rem;
+
 }
 
 .flex-container {
@@ -171,6 +172,7 @@ a > svg {
 
 .close {
   display: none;
+  fill: white;
 }
 
 /* Retour en haut de la page */
@@ -249,6 +251,7 @@ li:first-child {
 
 .menu {
   margin-top: 0.2rem;
+  /* fill: var(--main-color); */
 }
 
 .nav {
@@ -763,13 +766,14 @@ footer .social-link {
   }
 
   .navSousItemdrop {
-    top: 3rem;
+    position:relative;
+    top: 5rem;
     left: 18rem;
   }
 
   .navSousItemdrop_active {
     position: absolute;
-    top: 2.5rem;
+    top: 4rem;
   }
 
   .color-slider {
