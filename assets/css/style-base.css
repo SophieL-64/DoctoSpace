@@ -144,6 +144,8 @@ section {
 
 /*****SEECTION NAVBARRE HEADER*/
 /* NAVBAR */
+
+
 #navCheckbox:checked ~ ul.navMenu li {
   display: block;
 }
@@ -241,7 +243,9 @@ li {
 
 li:first-child {
   display: block;
+  margin-left:5px;
 }
+
 
 .menu {
   margin-top: 0.2rem;
