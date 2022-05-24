@@ -5,25 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctoSpace - Homepage</title>
-    <link rel="stylesheet" href="./assets/css/style-base.css">
-    <link rel="stylesheet" href="./assets/css/concept.css">
-    <link rel="stylesheet" href="./assets/css/style-contact.css">
-    <link rel="stylesheet" href="./assets/css/style-nav.css" />
-    <link rel="stylesheet" href="./assets/css/slider.css" />
-    <link rel="stylesheet" href="./assets/css/style-testimonials.css" />
-    <link rel="stylesheet" href="./assets/css/style-footer.css" />
-    <link rel="stylesheet" media="screen and (min-width:390px)" href="./assets/css/style.desktop-testimonials.css"/>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style-base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap" rel="stylesheet"/>
 
-    <script src="./testimonials.js" defer></script>
-    <script src="./contact-script.js" defer></script>
-    <script src="./main.js" defer></script>
+    <script src="./index.js" defer></script>
     <script src="./slider.js" defer></script>
+    <script src="./testimonials.js" defer></script>
+    <script src="./contact.js" defer></script>
+    <script src="./darkLight.js" defer></script>
   </head>
+
   <body>
     <header class="parallax-effect">
       <nav class="nav">
@@ -42,64 +38,70 @@
         </label>
         <ul class="navMenu">
           <li>
-            <a href="#">
+            <a href="index.html">
               <svg id="logo" viewBox="0 0 640 512" width="100">
-                <path
-                  d="M129.1 480H128V384H352L245.2 448.1C210.4 468.1 170.6 480 129.1 480zM352 128H128V32H129.1C170.6 32 210.4 43.03 245.2 63.92L352 128zM104 128C130.2 128 153.4 140.6 168 160H456C525.3 160 591 182.7 635.2 241.6C641.6 250.1 641.6 261.9 635.2 270.4C591 329.3 525.3 352 456 352H168C153.4 371.4 130.2 384 104 384H96V480H80C53.49 480 32 458.5 32 432V384H40C17.91 384 0 366.1 0 344V168C0 145.9 17.89 128 39.96 128H32V80C32 53.49 53.49 32 80 32H96V128H104zM476.4 208C473.1 208 472 209.1 472 212.4V299.6C472 302 473.1 304 476.4 304C496.1 304 512 288.1 512 268.4V243.6C512 223.9 496.1 208 476.4 208z"
-                />
+                <path d="M129.1 480H128V384H352L245.2 448.1C210.4 468.1 170.6 480 129.1 480zM352 128H128V32H129.1C170.6 32 210.4 43.03 245.2 63.92L352 128zM104 128C130.2 128 153.4 140.6 168 160H456C525.3 160 591 182.7 635.2 241.6C641.6 250.1 641.6 261.9 635.2 270.4C591 329.3 525.3 352 456 352H168C153.4 371.4 130.2 384 104 384H96V480H80C53.49 480 32 458.5 32 432V384H40C17.91 384 0 366.1 0 344V168C0 145.9 17.89 128 39.96 128H32V80C32 53.49 53.49 32 80 32H96V128H104zM476.4 208C473.1 208 472 209.1 472 212.4V299.6C472 302 473.1 304 476.4 304C496.1 304 512 288.1 512 268.4V243.6C512 223.9 496.1 208 476.4 208z"/>
               </svg>
             </a>
           </li>
           <li>
-            <a href="#">A propos</a>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="#">Concept</a>
           </li>
           <li class="navSousMenu">
-            <a class="destination" onclick="toggle()" href="#">Destination</a>
+            <a class="destination" onclick="toggle()" href="#">Destinations</a>
             <ul id="sousMenu" class="navSousItemdrop">
               <li>
-                <a href="https://cnes.fr/fr/la-planete-uranus" target="_blank"
-                  >Uranus</a
+                <a href="pathoPlanet2.html"
+                  >Insomnie</a
                 >
               </li>
               <li>
-                <a href="https://cnes.fr/fr/la-planete-mercure" target="_blank"
-                  >Mercure</a
+                <a href="pathoPlanet1.html"
+                  >Acnée</a
                 >
               </li>
               <li>
-                <a href="https://cnes.fr/fr/la-planete-mars" target="_blank"
-                  >Mars</a
+                <a href="pathoPlanet3.html"
+                  >Affres de l'âge</a
                 >
               </li>
             </ul>
           </li>
           <li>
-            <a href="#" target="_blank">Gallery</a>
+            <a href="#" >Galerie</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="goodies.html" >Boutique</a>
           </li>
         </ul>
       </nav>
       <h1>DOCTOSPACE</h1>
       <h3>Voyages thérapeutiques interplanétaires</h3>
-      <h2>Rester,<br/> c'est s'enterrer</h2>
+      <h2>
+        Rester,<br />
+        c'est s'enterrer
+      </h2>
     </header>
 
-    <section class="parallax-effect2 " id="concept">
+    <section class="parallax-effect2" id="concept">
       <h2>Le concept</h2>
       <div class="concept">
         <p>Quels que soient vos maux, une solution existe dans le firmament.</p>
-        <p>Vous n'imaginez pas tout le bien que peut vous apporter un rail de poudre lunaire ou une intraveineuse de salive de
-          Ti'ka-'s's.</p>
-        <p>Que vous soyez au stade terminal ou enclin au tourisme bien-être, embarquez pour l'un de nos circuits dépaysants et
-          revigorants.</p>
+        <p>
+          Vous n'imaginez pas tout le bien que peut vous apporter un rail de
+          poudre lunaire ou une intraveineuse de salive de Ti'ka-'s's.
+        </p>
+        <p>
+          Que vous soyez au stade terminal ou enclin au tourisme bien-être,
+          embarquez pour l'un de nos circuits dépaysants et revigorants.
+        </p>
       </div>
-     
     </section>
 
     <section class="parallax-effect">
-      
       <!--slide 
             si class pour la section alors background image-->
       <!-- Slider container -->
@@ -139,9 +141,7 @@
       </div>
     </section>
 
-  
-
-    <section class="testimonials  parallax-effect2">
+    <section class="testimonials parallax-effect2">
       <!-- effet parallaxe -->
       <!-- tesmonials -->
       <h2>Testimonials</h2>
@@ -200,8 +200,8 @@
               <i class="fas fa-quote-left"></i>
               Face à mes élèves, j’avais de plus en plus de mal à cacher ma
               fatigue. Certains jours, j’en aurais pris un pour taper sur
-              l’autre. Depuis que je suis allé sur
-              Melatonia, je suis méconnaissable
+              l’autre. Depuis que je suis allé sur Melatonia, je suis
+              méconnaissable
 
               <i class="fas fa-quote-left"></i>
             </p>
@@ -223,53 +223,75 @@
       </div>
     </section>
 
-   
     <section class="parallax-effect" id="contact-box">
-        <h2>Contact</h2>
-          <div id="contact">
-          <form id="contactForm">
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" placeholder=" Enter your name " /><br />
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" placeholder=" Enter your Email " /><br />
-            <label for="selector">Requête:</label><br />  
-            <select name="select" id="select">
-                <option value="">Quelle est votre demande ?</option>
-                <option value="slectone1">Une réservation</option>
-                <option value="slectone2">Une réclamtion</option>
-                <option value="slectone2">Un commentaire</option>
-            </select>
-            <label for="message">Message:</label><br />
-            <textarea id="message" name="message"></textarea>
-            <br /><br />
-            <button type="submit">Send</button>
-          </form>
-          </div>
-      </section>
+      <h2>Contact</h2>
+      <div id="contact">
+        <form id="contactForm">
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder=" Enter your name "
+          /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder=" Enter your Email "
+          /><br />
+          <label for="selector">Requête:</label><br />
+          <select name="select" id="select">
+            <option value="">Quelle est votre demande ?</option>
+            <option value="slectone1">Une réservation</option>
+            <option value="slectone2">Une réclamation</option>
+            <option value="slectone2">Un commentaire</option>
+          </select>
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message"></textarea>
+          <br /><br />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
 
     <footer>
-      <div class="flex-container">
+      <div class="footer-container">
         <div class="footer-copyright">
           <p>Fait avec 💓 . Copyright Ⓒ - DoctoSpace - 2022</p>
         </div>
-        <ul class="social-link">
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
+        <div class="social-link">
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
       </div>
     </footer>
-    
 
+    <!-- DEBUT ABSOLUTE BUTTON -->
     <!-- Scroll up button to nav -->
-
-      <div onclick="retourHaut()" id="haut" title="Retour haut de page">
-        <svg viewBox="0 0 576 512" width="40">
-          <path
-            d="M568.2 336.3c-13.12-17.81-38.14-21.66-55.93-8.469l-119.7 88.17h-120.6c-8.748 0-15.1-7.25-15.1-15.99c0-8.75 7.25-16 15.1-16h78.25c15.1 0 30.75-10.88 33.37-26.62c3.25-20-12.12-37.38-31.62-37.38H191.1c-26.1 0-53.12 9.25-74.12 26.25l-46.5 37.74L15.1 383.1C7.251 383.1 0 391.3 0 400v95.98C0 504.8 7.251 512 15.1 512h346.1c22.03 0 43.92-7.188 61.7-20.27l135.1-99.52C577.5 379.1 581.3 354.1 568.2 336.3zM160 176h64v64C224 248.8 231.2 256 240 256h64C312.8 256 320 248.8 320 240v-64h64c8.836 0 16-7.164 16-16V96c0-8.838-7.164-16-16-16h-64v-64C320 7.162 312.8 0 304 0h-64C231.2 0 224 7.162 224 16v64H160C151.2 80 144 87.16 144 96v64C144 168.8 151.2 176 160 176z"
-          />
-        </svg>
+    <div onclick="retourHaut()" id="haut" title="Retour haut de page">
+      <svg class="bg-main-color" viewBox="0 0 512 512" width="30">
+        <path
+          d="M272.9 135.7C268.3 130.8 261.9 128 255.2 128C247.5 128.3 241.1 130.9 237.5 135.8l-87.25 96C143.8 238.9 142.2 249 146.1 257.7C149.9 266.4 158.5 272 167.1 272h56L224 360c0 13.25 10.75 24 24 24h16c13.25 0 23.1-10.75 23.1-24L287.1 272h56c9.531 0 18.16-5.656 22-14.38c3.811-8.75 2.092-18.91-4.377-25.91L272.9 135.7zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z"
+        />
+      </svg>
     </div>
-    
+
+    <div id="toggleDarkLight">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
   </body>
 </html>
