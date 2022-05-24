@@ -5,6 +5,7 @@
   "repository": "git@github.com:SophieL-64/DoctoSpace.git",
   "author": "victor DG <v.degermain@gmail.com>",
   "license": "MIT",
+
   "devDependencies": {
     "parcel": "^2.5.0"
   },
