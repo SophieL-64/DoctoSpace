@@ -144,6 +144,8 @@ section {
 
 /*****SEECTION NAVBARRE HEADER*/
 /* NAVBAR */
+
+
 #navCheckbox:checked ~ ul.navMenu li {
   display: block;
 }
@@ -241,14 +243,16 @@ li {
 
 li:first-child {
   display: block;
+  margin-left:5px;
 }
+
 
 .menu {
   margin-top: 0.2rem;
 }
 
 .nav {
-    border-bottom: 1px solid var(--clr_secondary_font);
+    /* border-bottom: 1px solid var(--clr_secondary_font); */
 }
 
 .navToggle {
@@ -737,8 +741,9 @@ footer .social-link {
   }
 
   .navMenu {
-      color: var(--secondary-color);
-      background-color: #0063a1;
+      font-weight: 700;
+      color: var(--text-font-color);
+      background-color: var(--main-color);;
       margin: 0;
       position: fixed;
       z-index: 99;
@@ -746,7 +751,7 @@ footer .social-link {
       right: 0;
       left: 0;
       height: 80px;
-      box-shadow: 0 1px 0 #f7f7f7;
+      /* box-shadow: 0 1px 0 #f7f7f7; */
   }
 
   .nav .navToggle {
@@ -866,7 +871,7 @@ footer .social-link {
   /*****SECTION DARK LIGHT *****/
   #toggleDarkLight {
     position: fixed;
-    top: 60px;
+    top: 27px;
     right: 50px;
   }
   /*****FIN DARK LIGHT *****/
