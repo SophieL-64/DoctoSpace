@@ -1,4 +1,4 @@
-@media screen and (min-width: 560px) {
+/* @media screen and (min-width: 560px) {
   #haut {
     display: none;
     position: fixed;
@@ -49,7 +49,7 @@
     position: absolute;
     top: 2.5rem;
   }
-}
+} */
 
 @media screen and (min-width: 560px) {
   .advice {
@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (min-width: 560px) {
+/* @media screen and (min-width: 560px) {
   #haut {
     display: none;
     position: fixed;
@@ -90,40 +90,39 @@
     border-radius: 10px;
     font-size: 18px;
     padding: 15px;
+  } */
+
+@media screen and (min-width: 560px) {
+  .revenues {
+    min-width: 600px;
+    max-width: 1000px;
   }
 
-  @media screen and (min-width: 560px) {
-    .revenues {
-      min-width: 600px;
-      max-width: 1000px;
-    }
+  #RFR-input {
+    min-width: 250px;
+  }
 
-    #RFR-input {
-      min-width: 250px;
-    }
+  .submit-btn:hover {
+    background-color: goldenrod;
+    cursor: grab;
+  }
 
-    .submit-btn:hover {
-      background-color: goldenrod;
-      cursor: grab;
-    }
+  .close-formulas:hover {
+    background-color: goldenrod;
+    cursor: grab;
+  }
 
-    .close-formulas:hover {
-      background-color: goldenrod;
-      cursor: grab;
-    }
+  #contact-link:hover {
+    background-color: goldenrod;
+    cursor: grab;
+  }
 
-    #contact-link:hover {
-      background-color: goldenrod;
-      cursor: grab;
-    }
+  .result-txt {
+    margin-bottom: var(--spacing);
+    font-size: calc(var(--main-font-size) * 2);
+  }
 
-    .result-txt {
-      margin-bottom: var(--spacing);
-      font-size: calc(var(--main-font-size) * 2);
-    }
-
-    .formula {
-      max-width: 400px;
-    }
+  .formula {
+    max-width: 400px;
   }
 }

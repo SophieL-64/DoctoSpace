@@ -1,20 +1,3 @@
-/* :root {
-    --clr_main_font: rgb(216, 214, 214);
-    --clr_secondary_font: rgb(138, 138, 138);
-    --clr_hover: rgb(178, 101, 201);
-    --clr_title: rgb(30, 224, 78);
-    --clr_logo: rgb(10, 134, 236);
-
-} */
-
-/* *,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} */
-
 
 
 /* NAVBAR */
@@ -171,33 +154,37 @@ li:first-child{
 }
 
 
+#haut {
+    display: none;
+    /* background-image: url('../img/icons8-scroll-up-50.png'); */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--dark-orange);
+    color: var(--big-black-brown);
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 15px;
+}
 
+#haut:hover {
+    background-color: var(--dark-brown);
+}
+
+/** Desktop display**/
 @media screen and (min-width:560px) {
     .destination{
         position: relative;
     }
+    #haut {
+        bottom: 10px;
+        right: 0px;
+    }
 
-    /* Retour en haut de la page */
-#haut {
-    display:none;
-    position:fixed;
-    bottom:20px;
-    right:30px;
-    z-index:99;
-    border:none;
-    outline:none;
-    background-color:var(--dark-orange);
-    color:var(--big-black-brown);
-    cursor:pointer;
-    border-radius:10px;
-    font-size:18px;
-    padding:15px;
-    }
-    
-    #haut:hover {
-    background-color:var(--dark-brown);
-    }
-    
     header>h1{
         text-align: center;
         line-height: 2.5em;
@@ -257,22 +244,5 @@ li:first-child{
     
     .color-slider {
         background-color: antiquewhite;
-    }
-
-  .parallax-effect {
-        background-image: url("../img/haeder-img.jpg");
-        min-height: 600px;
-        background-attachment: fixed;
-        background-position:bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .parallax-effect + section {
-        height: 1000px;
-        background-image: linear-gradient(to top, #2c2fce, #070707);
-        font-size: 20px;
-        text-align: center;
-        font-family: "Raleway", Arial, sans-serif;
     }
 }

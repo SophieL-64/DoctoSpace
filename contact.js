@@ -1,5 +1,5 @@
 const message =
-  "Thank you for your request. We will respond shortly.";
+  "Votre demande a bien été prise en compte par notre équipe.";
 
 document
   .getElementById("contactForm")

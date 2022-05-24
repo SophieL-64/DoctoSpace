@@ -11,7 +11,7 @@ function mediaquery(x) {
   } else {
     let i = 1;
     setInterval(() => {
-      console.log("test interval toutes les 3 secondes");
+      // console.log("test interval toutes les 3 secondes");
       permute(i);
       if (i !== 3) {
         i++;

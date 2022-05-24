@@ -23,7 +23,7 @@ function toggle() {
 
 // Scroll haut de page///////////////////////////////////////
 window.onscroll = function () {
-    scrollFunction();
+     scrollFunction();
   };
   
   function scrollFunction() {
