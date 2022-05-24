@@ -16,6 +16,7 @@
     <script src="./slider.js" defer></script>
     <script src="./testimonials.js" defer></script>
     <script src="./contact.js" defer></script>
+    <script src="./darkLight.js" defer></script>
 
   </head>
 
@@ -243,6 +244,7 @@
           </div>
       </section>
 
+
   <footer>
     <div class="footer-container">
       <div class="footer-copyright">
@@ -255,8 +257,13 @@
       </div>
     </div>
   </footer>
-    <!-- Scroll up button to nav -->
 
+
+
+  
+
+   <!-- DEBUT ABSOLUTE BUTTON -->
+    <!-- Scroll up button to nav -->
       <div onclick="retourHaut()" id="haut" title="Retour haut de page">
       <svg  class="bg-main-color" viewBox="0 0 512 512" width="30">
         <path
@@ -264,9 +271,15 @@
       </svg>
     </div>
 
-      </section>
-    </aside>
+    <div id="toggleDarkLight">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
 
- 
+
   </body>
 </html>
