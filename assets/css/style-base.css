@@ -1,21 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap);
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 :root {
 
     --main-color: #0063a1;
     --secondary-color: #543100;
-    --third-color:#0c0c0c;
+    --third-color:#16113c;
 
 
     --main-font-color: black;
     --secondary-font-color: white;
 
-    --clr_main_font: rgb(216, 214, 214);
-    --clr_secondary_font: rgb(138, 138, 138);
-    --clr_hover: rgb(178, 101, 201);
-    --clr_title: rgb(30, 224, 78);
-    --clr_logo: rgb(10, 134, 236);
+ 
 
     --width-mobile: 400px;
 
@@ -52,19 +48,33 @@ a,li{
 
 /*** GENERIQUE*********/
 body {
+    --main-color: #0063a1;
+    --secondary-color: #543100;
+    --third-color: #16113c;
+
+
+    --main-font-color: rgb(253, 253, 253);
+    --secondary-font-color: white;
+
+
     font-family: var(--text-font-family);
     font-weight: 400;
     font-size: 20px;
     color: var(--clr_main_font);
     height: 100vh;
-    background: #333;
+    color: var(--main-font-color);
+    background: var(--main-color);
     /* background-image: url('../img/haeder-img.jpg'); */
 }
 
 body.dark {
-    --main-color: #1000a1;
-    --secondary-color: #e1a129;
+    --main-color: #100347;
+    --secondary-color: #543100;
+    --third-color: #16113c;
+
+
     --main-font-color: rgb(255, 255, 255);
+    --secondary-font-color: white;
     color: var(--main-font-color);
     background: var(--main-color);
 }
@@ -79,7 +89,6 @@ h2 {
     margin-bottom: var(--spacing);
     text-align: start;
     border-bottom: 1px solid var(--main-font-color);
-    margin-bottom: 1rem;
 }
 
 section {
@@ -249,7 +258,6 @@ li:first-child {
 
 .nav {
     border-bottom: 1px solid var(--clr_secondary_font);
-
 }
 
 .navToggle {
@@ -328,6 +336,7 @@ li:first-child {
 #concept {
     background-color: inherit;
     font-family: var(--main-font-family);
+    
 
 }
 
@@ -444,7 +453,7 @@ li:first-child {
 /*****SECTION TESTIMONIALS*/
 .testimonial {
     display: none;
-    color: var(--secondary-font-color);
+    color: var(--text-font-color);
     font-family: var(--main-font-family);
     font-size: 1.2rem;
     font-weight: 400;
@@ -605,7 +614,7 @@ textarea {
 
 /*****SEECTION FOOTER*/
 footer {
-    padding: 1rem;
+    /* padding: 1rem; */
     color: var(--secondary-font-color);
     font-size: 1.2rem;
 }
@@ -644,7 +653,7 @@ footer .social-link {
 .fab,
 .fa-facebook,
 .fa-instagram {
-    color: var(--main-color);
+    color: var(--text-font-color);
 }
 
 footer .social-link{
@@ -755,13 +764,15 @@ footer .social-link{
         }
 
         .navMenu {
-            background-color: var(--main-font-color);
+            color: var(--secondary-color);
+            background-color: #0063a1;
             margin: 0;
             position: fixed;
             z-index: 99;
             top: 0;
             right: 0;
             left: 0;
+            height: 80px;
             box-shadow: 0 1px 0 #f7f7f7;
         }
 
@@ -844,7 +855,7 @@ footer .social-link{
 
 /*****SECTION FOOTER *****/
 footer {
-            padding: 2rem 6rem;
+            padding: 0rem 6rem;
             font-size: 1.6rem;
         }
 
