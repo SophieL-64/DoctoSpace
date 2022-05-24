@@ -737,8 +737,8 @@ footer .social-link {
   }
 
   .navMenu {
-      color: var(--secondary-color);
-      background-color: #0063a1;
+      color: var(--text-font-color);
+      background-color: var(--main-color);;
       margin: 0;
       position: fixed;
       z-index: 99;
@@ -866,7 +866,7 @@ footer .social-link {
   /*****SECTION DARK LIGHT *****/
   #toggleDarkLight {
     position: fixed;
-    top: 60px;
+    top: 27px;
     right: 50px;
   }
   /*****FIN DARK LIGHT *****/

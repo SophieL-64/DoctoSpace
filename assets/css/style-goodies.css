@@ -108,7 +108,7 @@ a>svg{
   }
   
 header{
-  background-image: url("../img/haeder-img.jpg");
+  background-image: url("../img/__haeder-img.jpg");
   min-height: 500px;
   background-attachment: fixed;
   background-position:top;
