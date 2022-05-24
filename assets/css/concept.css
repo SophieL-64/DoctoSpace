@@ -1,5 +1,6 @@
 #concept{
     background-color: inherit;
+    margin-bottom: 5rem ;
 }
  .concept {
     flex-flow:column;
