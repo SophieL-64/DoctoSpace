@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap);
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+=======
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+>>>>>>> 6c52f430b79244bf78628f0f401025971cf31673
 :root {
 
     --main-color: #0063a1;
@@ -660,6 +666,14 @@ footer .social-link{
     right: 50px;
 }
 
+
+/**** TOGGLE DARK LIGHT***/
+#toggleDarkLight{
+    position : fixed;
+    top:10px;
+    right:10px;
+}
+
 .checkbox {
     opacity: 0;
     position: absolute;
@@ -669,7 +683,7 @@ footer .social-link{
 .label {
     background-color: #111;
     border-radius: 50px;
-    border: 1px solid #0063a1;
+    border:1px solid #0063a1;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -707,6 +721,7 @@ footer .social-link{
 }
 
 /**** FIN TOGGLE DARK LIGHT*****/
+
 
 /**********DESKTOP*****/
 @media screen and (min-width: 560px) {
