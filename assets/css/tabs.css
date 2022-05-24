@@ -1,3 +1,9 @@
+* {
+    padding: 0px;
+    margin: 0px; 
+    font-family: var(--main-font-family)
+}
+
 [data-tab-content] {
     display: none;
 }
@@ -19,6 +25,7 @@
     cursor: pointer;
     padding: 8px;
     color: var(--secondary-font-color);
+    border-radius: 25px;
 }
 
 .tab.active {
@@ -37,8 +44,6 @@
 }
 
 .tabs-container {
-    margin: calc(var(--spacing)*2);
-    padding: var(--spacing);
     border-radius: 5px;
     background-color:inherit;
 }
@@ -60,7 +65,7 @@
 .contain p {
     max-width: 900px;
 }
-.contain a:hover {
+.contain a {
     background-color: var(--secondary-color);
     border-radius: 25px;
     padding: 1rem;

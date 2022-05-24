@@ -1,0 +1,227 @@
+/* GLOBAL*/
+* {
+
+
+}
+
+p{
+  font-family: var(--main-font-family);
+}
+
+/*HEADER*/
+
+.advice {
+  font-weight: bold;
+  background: transparent;
+  font-size: 0.8rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.bandeau {
+  display: flex;
+  min-width: 50%;
+  justify-content: center;
+}
+
+.bandeau-container {
+  padding : 20px;
+  border-top: 1px solid var(--main-font-color);
+  border-bottom: 1px solid var(--main-font-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 2rem;
+}
+
+/*TITLE*/
+
+.circuit-1 {
+  background-attachment: initial;
+  background-image: url("https://cdn.pixabay.com/photo/2018/11/09/20/11/struggle-3805349_1280.jpg");
+}
+
+.circuit-2 {
+  background-attachment: initial;
+  background-image: url("../img/patho/insomnia.jpg");
+}
+
+.circuit-3 {
+  background-attachment: initial;
+  background-image: url("../img/patho/oldGuy.jpg");
+}
+
+.circuit-container {
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.circuit-title {
+  color: var(--main-font-color);
+
+  text-shadow: 1px 1px #333;
+  font-weight: bold;
+  text-align: left;
+  font-size: 1rem;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  border-bottom: 0;
+  margin-bottom: 0;
+  /* color: black; */
+}
+
+.notabene{
+  padding-top:0.5rem;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+}
+
+/*PRESENTATION*/
+.pathology {
+  text-align: start;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  line-height: 2rem;
+}
+
+.planet-img-1 {
+  background-image: url("../img/img-slider/planet1.jpg");
+}
+
+.planet-img-2 {
+  background-image: url("../img/img-slider/planet3.jpg");
+}
+
+.planet-img-3 {
+  background-image: url("../img/img-slider/planet4.jpg");
+}
+
+.planete-container {
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  color: var(--secondary-font-color);
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+}
+
+/* FINANCIAL PART - REVENUES CHECKOUT */
+
+.revenues {
+  --revenues-border-radius: 20px;
+  margin: 100px auto;
+}
+
+.RFR-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing);
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+.revenues h2 {
+  border: none;
+}
+
+.revenues-check {
+  border: 3px solid var(--secondary-font-color);
+  border-radius: var(--revenues-border-radius);
+  font-family: var(--main-font-family);
+  background-color: var(--main-color);
+  padding: calc(var(--spacing) * 2);
+}
+
+#RFR-input {
+  margin: calc(var(--spacing) * 2) 0;
+  padding: var(--spacing);
+  display: block;
+  border-radius: 3px;
+}
+
+.submit-btn {
+  background-color: var(--secondary-color);
+  color: var(--secondary-font-color);
+  margin: var(--spacing) 0;
+  padding: var(--spacing);
+  border-radius: calc(var(--revenues-border-radius) * 0.5);
+}
+
+.formulas {
+  margin: calc(var(--spacing) * 8) auto;
+  border: 3px solid var(--secondary-font-color);
+  border-radius: var(--revenues-border-radius);
+  font-family: var(--main-font-family);
+  background-color: var(--main-color);
+  padding: calc(var(--spacing) * 2);
+  box-shadow: 3px 3px 10px 5px var(--main-font-color);
+  position: relative;
+}
+
+.close-formulas {
+  font-size: calc(var(--main-font-size) * 1);
+  border: 1px solid var(--secondary-font-color);
+  display: inline;
+  padding: var(--spacing) calc(var(--spacing) * 1.5);
+  box-shadow: 3px 3px 10px 5px var(--main-font-color);
+  position: absolute;
+  top: -65px;
+  right: 0;
+  background-color: var(--main-color);
+}
+
+.formula {
+  padding: var(--spacing);
+  margin: var(--spacing) 0;
+  border: 1px solid var(--secondary-font-color);
+  border-radius: var(--revenues-border-radius);
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: var(--secondary-color);
+}
+
+.payment-ways {
+  margin-top: calc(var(--spacing) * 2);
+  font-size: calc(var(--main-font-size));
+}
+
+.choice {
+  margin-top: calc(var(--spacing) * 2);
+  font-size: calc(var(--main-font-size) * 1.5);
+}
+
+#contact-link {
+  color: var(--secondary-color);
+}
+
+.result-txt {
+  font-size: calc(var(--main-font-size) * 1.3);
+}
+#payment-means {
+  text-decoration: underline;
+}
+
+.inactif {
+  display: none;
+}
