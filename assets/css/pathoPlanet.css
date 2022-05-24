@@ -196,14 +196,14 @@ li:first-child {
 }
 
 /*DESTINATION PLANETE*/
-.destination {
+/* .destination {
   font-weight: bold;
   background: transparent;
   font-size: 1rem;
   color: var(--secondary-font-color);
   text-transform: uppercase;
   font-size: 2rem;
-}
+} */
 
 /*PRESENTATION*/
 .pathology {
