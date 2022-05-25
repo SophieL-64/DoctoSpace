@@ -9,7 +9,7 @@ body {
 
 
 .gallery-container {
-  background-image: url("../img/haeder-img.jpg");
+  /* background-image: url("../img/haeder-img.jpg"); */
   padding: 40px;
   justify-content: center;
 
