@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+/* :root {
+  --main-color: #0063a1;
+  --secondary-color: #543100;
+  --third-color: #0c0c0c;
+
+  --clr_main_font: rgb(216, 214, 214);
+  --clr_secondary_font: rgb(138, 138, 138);
+  --clr_hover: rgb(178, 101, 201);
+  --clr_title: rgb(30, 224, 78);
+  --clr_logo: rgb(10, 134, 236);
+
+  --width-mobile: 400px;
+
+  --title-font-family: "Oswald", sans-serif;
+  --main-font-family: "Courier New", Courier, monospace;
+  /* --third-font-family: "Raleway", Arial, sans-serif; 
+  --main-font-size: 14px;
+  --spacing: 8px;
+
+  --corner-img-1: 8px;
+  --corner-img-2: 12px;
+  box-sizing: border-box;
+} */
+
+* {
+    font-family: var(--main-font-family);
+}
+
+.concept-h2 {
+    font-family: var(--title-font-family);
+    text-align: center;
+}
+
+.concept-p {
+    font-family: var(--main-font-family);
+}
+
+.concept-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: calc(var(--main-font-size)*2);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+   
+    justify-content: center;
+}
+
+#img-1 {
+    background-image: url("../img/concept/concept1.jpg");
+}
+
+#img-2 {
+    background-image: url("../img/concept/concept2.jpg");
+}
+
+#img-3 {
+    background-image: url("../img/concept/concept3.jpg");
+}
+
+#img-4 {
+    background-image: url("../img/concept/concept4.jpg");
+}
+
+.left-img,
+.right-img {
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    background-size: cover;
+}
+
+.right-txt,
+.left-txt {
+    width: 100%;
+    min-height: 150px;
+    background: linear-gradient(45deg, var(--main-color), var(--third-color), var(--main-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+}
+
+.section-concept {
+    padding: 0;
+}
+
+@media screen and (min-width: 560px) {
+   /* #concept {
+        height:auto; 
+    }
+
+    .concept{
+        text-align: center;
+        margin-top: 5rem;
+        line-height: 3rem;
+        width:100%;   
+    }*/
+    .concept-title {
+        text-align: center;
+        margin: 100px;
+        font-size: calc(var(--main-font-size)*5);
+    }
+
+    .container-concept {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-img {
+        position: absolute;
+        float: left;
+    }
+
+    .left-img,
+    .right-img {
+        width: 50%;
+        height: 250px;
+        padding: 30px;
+        border-radius: 20px;
+        background-size: cover;
+        box-shadow: 2px 2px 5px rgb(236, 138, 10);
+    }
+
+    .left-txt {
+        margin: -50px 0px 150px 50px;
+        float: left;
+        background: linear-gradient(45deg, var(--main-color), var(--third-color), var(--main-color));
+    }
+
+    .left-txt,
+    .right-txt {
+        width: 50%;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        color: white;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .right-img {
+        position: relative;
+        float: right;
+    }
+
+    .right-txt {
+        margin: 175px 53px 150px 0;
+        float: right;
+        background: linear-gradient(45deg,var(--main-color), var(--third-color), var(--main-color));
+    }
+
+    #row-1,
+    #row-2,
+    #row-3,
+    #row-4 {
+        position: relative;
+    }
+
+    .section-concept {
+        margin-top: 50px;
+        width: 100%;
+        background-image: url('../img/haeder-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 75%;
+    }
+}
