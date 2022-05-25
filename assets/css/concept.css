@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 
-:root {
+/* :root {
   --main-color: #0063a1;
   --secondary-color: #543100;
   --third-color: #0c0c0c;
@@ -18,14 +18,14 @@
 
   --title-font-family: "Oswald", sans-serif;
   --main-font-family: "Courier New", Courier, monospace;
-  /* --third-font-family: "Raleway", Arial, sans-serif; */
+  /* --third-font-family: "Raleway", Arial, sans-serif; 
   --main-font-size: 14px;
   --spacing: 8px;
 
   --corner-img-1: 8px;
   --corner-img-2: 12px;
   box-sizing: border-box;
-}
+} */
 
 * {
     font-family: var(--main-font-family);
@@ -81,7 +81,7 @@
 .left-txt {
     width: 100%;
     min-height: 150px;
-    background: linear-gradient(45deg, #0063A1, #003C61, #0063A1);
+    background: linear-gradient(45deg, var(--main-color), var(--third-color), var(--main-color));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +136,7 @@
     .left-txt {
         margin: -50px 0px 150px 50px;
         float: left;
-        background: linear-gradient(45deg, #0063A1, #003C61, #0063A1);
+        background: linear-gradient(45deg, var(--main-color), var(--third-color), var(--main-color));
     }
 
     .left-txt,
@@ -160,7 +160,7 @@
     .right-txt {
         margin: 175px 53px 150px 0;
         float: right;
-        background: linear-gradient(45deg, #003C61, #0063A1, #003C61);
+        background: linear-gradient(45deg,var(--main-color), var(--third-color), var(--main-color));
     }
 
     #row-1,
