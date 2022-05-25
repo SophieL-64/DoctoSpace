@@ -217,9 +217,8 @@ header > h1 {
   text-align: center;
   line-height: 3.5em;
   font-size: 3rem;
-  text-shadow: 0 1px 0 var(--clr_title), 0 2px 0 var(--clr_title), 0 3px 0 var(--clr_title),
-    0 4px 0 var(--clr_title), 0 5px 0 var(--clr_title), 0 6px 0 var(--clr_title),
-    0 20px 30px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 0 var(--clr_title), 0 2px 0 var(--clr_title), 0 3px 0 var(--clr_title),
+        0 4px 0 var(--clr_title), 0 4px 0 var(--clr_title);
 }
 
 header h2 {
@@ -727,25 +726,18 @@ footer .social-link {
     text-align: center;
     line-height: 2.5em;
     font-size: 7rem;
-    text-shadow: 0 1px 0 var(--clr_title), 0 2px 0 var(--clr_title), 0 3px 0 var(--clr_title),
-      0 4px 0 var(--clr_title), 0 5px 0 var(--clr_title),
-      0 6px 0 var(--clr_title), 0 20px 30px rgba(0, 0, 0, 0.5);
   }
 
   header h2 {
     text-align: center;
     font-size: 4rem;
-    text-shadow: 0 1px 0 var(--clr_title), 0 2px 0 var(--clr_title), 0 3px 0 var(--clr_title),
-      0 4px 0 var(--clr_title), 0 5px 0 var(--clr_title),
-      0 6px 0 var(--clr_title), 0 20px 30px rgba(0, 0, 0, 0.5);
+     
   }
 
   header h3 {
     text-align: center;
     font-size: 2rem;
-    text-shadow: 0 1px 0 var(--clr_title), 0 2px 0 var(--clr_title), 0 3px 0 var(--clr_title),
-      0 4px 0 var(--clr_title), 0 5px 0 var(--clr_title),
-      0 6px 0 var(--clr_title), 0 20px 30px rgba(0, 0, 0, 0.5);
+   
   }
 
   li {
