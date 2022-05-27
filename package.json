@@ -7,9 +7,13 @@
   "license": "MIT",
 
   "devDependencies": {
-    "parcel": "^2.5.0"
+    "parcel": "^2.6.0"
+   
   },
   "scripts": {
-    "start":"parcel index.html"
+   "start": "parcel index.html",
+  "build": "parcel build index.html --dist-dir ./dist"
   }
+
+
 }

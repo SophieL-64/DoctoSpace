@@ -1,4 +1,4 @@
-const cards = document.querySelector(".cards");
+let cards = document.querySelector(".cards");
 
 const animalsToAdopt = [
   {
@@ -127,6 +127,9 @@ function createCard(title, info, imageUrl, price, shipp) {
   const cardImg = document.createElement("div");
   cardImg.style.backgroundImage = `url(${imageUrl})`;
   cardImg.classList.add("card-img");
+  
+  cardImg.classList.add("card-filter");
+  
   cardHeader.appendChild(cardImg);
 
   // Step1: Create the cardBody div, add the class card-body and add it to the card
@@ -164,6 +167,16 @@ function createCard(title, info, imageUrl, price, shipp) {
   cardButton.innerHTML = "Ajouter au panier";
   // and add it to the cardBody
   cardBody.appendChild(cardButton);
+
+
+  card.addEventListener("mouseenter",()=>{
+      console.log("mouse in")
+       cardImg.classList.toggle("card-nofilter")
+    })
+     card.addEventListener("mouseleave", () => {
+        console.log("mouse out")
+         cardImg.classList.toggle("card-nofilter")
+      })
 }
 
 // /* Step 4: Create a for loop, for each element of the array,
@@ -171,7 +184,30 @@ function createCard(title, info, imageUrl, price, shipp) {
 
 animalsToAdopt.forEach((obj) => {
   createCard(obj.name, obj.info, obj.picture, obj.price, obj.shipp);
+
+
+
 });
+
+
+
+// let
+// ici pour une card
+//  let cardimg = document.querySelector(".card-img");
+//     let card = document.querySelector(".card");
+//     console.log(cards,cardimg,card)
+
+
+
+
+//     card.addEventListener("mouseenter",()=>{
+//       console.log("onMouseHover")
+//        cardimg.classList.toggle("card-nofilter")
+//     })
+//      card.addEventListener("mouseleave", () => {
+//         console.log("so")
+//         cardimg.classList.toggle("card-nofilter")
+//       })
 
 // Merci les Wilders////////////////////////////
 // for (let i = 0; i < animalsToAdopt.length; i++) {
