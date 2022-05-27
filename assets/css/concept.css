@@ -1,36 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
-
-/* :root {
-  --main-color: #0063a1;
-  --secondary-color: #543100;
-  --third-color: #0c0c0c;
-
-  --clr_main_font: rgb(216, 214, 214);
-  --clr_secondary_font: rgb(138, 138, 138);
-  --clr_hover: rgb(178, 101, 201);
-  --clr_title: rgb(30, 224, 78);
-  --clr_logo: rgb(10, 134, 236);
-
-  --width-mobile: 400px;
-
-  --title-font-family: "Oswald", sans-serif;
-  --main-font-family: "Courier New", Courier, monospace;
-  /* --third-font-family: "Raleway", Arial, sans-serif; 
-  --main-font-size: 14px;
-  --spacing: 8px;
-
-  --corner-img-1: 8px;
-  --corner-img-2: 12px;
-  box-sizing: border-box;
-} */
-
-* {
-    font-family: var(--main-font-family);
-}
-
 .concept-h2 {
     font-family: var(--title-font-family);
     text-align: center;
@@ -94,16 +61,7 @@
 }
 
 @media screen and (min-width: 560px) {
-   /* #concept {
-        height:auto; 
-    }
 
-    .concept{
-        text-align: center;
-        margin-top: 5rem;
-        line-height: 3rem;
-        width:100%;   
-    }*/
     .concept-title {
         text-align: center;
         margin: 100px;

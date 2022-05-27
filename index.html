@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctoSpace - Homepage</title>
-    <link rel="stylesheet" href="./assets/css/style-base.css" />
-    <link rel="stylesheet" href="./assets/css/tabs.css " />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/patho.css " />
+
+   <link rel="stylesheet"  media="screen and (min-width: 560px)" href="./assets/css/base-desktop.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -15,11 +18,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <script src="./index.js" defer></script>
-    <script src="./slider.js" defer></script>
-    <script src="./script.js" defer></script>
-    <script src="./testimonials.js" defer></script>
-    <script src="./contact.js" defer></script>
-    <script src="./darkLight.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/patho.js" defer></script>
+    <script src="./js/testimonials.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+    <script src="./js/darkLight.js" defer></script>
   </head>
 
   <body>
@@ -58,27 +61,27 @@
             <a href="index.html">Accueil</a>
           </li>
           <li>
-            <a href="concept.html">Concept</a>
+            <a href="./pages/concept.html">Concept</a>
           </li>
           <li class="navSousMenu">
             <a class="destination" onclick="toggle()" href="#">Destinations</a>
             <ul id="sousMenu" class="navSousItemdrop">
               <li>
-                <a href="pathoPlanet2.html">Insomnie</a>
+                <a href="./pages/pathoPlanet2.html">Insomnie</a>
               </li>
               <li>
-                <a href="pathoPlanet1.html">Acné</a>
+                <a href="./pages/pathoPlanet1.html">Acné</a>
               </li>
               <li>
-                <a href="pathoPlanet3.html">Affres de l'âge</a>
+                <a href="./pages/pathoPlanet3.html">Affres de l'âge</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="gallery.html">Galerie</a>
+            <a href="./pages/gallery.html">Galerie</a>
           </li>
           <li>
-            <a href="goodies.html">Boutique</a>
+            <a href="./pages/goodies.html">Boutique</a>
           </li>
         </ul>
       </nav>
@@ -119,7 +122,7 @@
           <div class="contain">
             <h3>Acné</h3>
             <img src="./assets/img/patho/acné.jpg" alt="" />
-            <a href="pathoPlanet1.html">+ d'infos...</a>
+            <a href="./pages/pathoPlanet1.html">+ d'infos...</a>
             <p>
               Vous vous rendrez sur l’une des rares îles de Sebumoria, où un
               DoctoGenius vous harnachera à un système de poulies afin de vous
@@ -131,7 +134,7 @@
           <div class="contain">
             <h3>Insomnie</h3>
             <img src="./assets/img/patho/insomnia.jpg" alt="" />
-            <a href="pathoPlanet2.html">+ d'infos...</a>
+            <a href="./pages/pathoPlanet2.html">+ d'infos...</a>
             <p>
               Révehy’papapa présente une particularité tout-à-fait intéressante
               puisque son atmosphère est composée en grande majorité de
@@ -145,7 +148,7 @@
           <div class="contain">
             <h3>Affres de l'âge</h3>
             <img src="./assets/img/patho/oldGuy.jpg" alt="" />
-            <a href="pathoPlanet3.html">+ d'infos...</a>
+            <a href="./pages/pathoPlanet3.html">+ d'infos...</a>
             <p>
               L’action anti-âge la plus perfectionnée de la planète, sur une
               autre planète.
@@ -165,20 +168,20 @@
         <div class="slider">
           <!-- slide 1 -->
           <div class="slide" id="slide1">
-            <a href="pathoPlanet1.html"
+            <a href="./pages/pathoPlanet1.html"
               ><img src="./assets/img/img-slider/planet1.jpg" alt=""
             /></a>
           </div>
           <!-- slide 2 -->
           <div class="slide" id="slide1">
-            <a href="pathoPlanet3.html"
+            <a href="./pages/pathoPlanet3.html"
               ><img src="./assets/img/img-slider/planet2.jpg" alt=""
             /></a>
           </div>
 
           <!-- slide 3 -->
           <div class="slide" id="slide1">
-            <a href="pathoPlanet2.html"
+            <a href="./pages/pathoPlanet2.html"
               ><img src="./assets/img/img-slider/planet3.jpg" alt=""
             /></a>
           </div>

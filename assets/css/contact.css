@@ -61,9 +61,6 @@ textarea {
         align-items: start;
         margin:  0;
         padding:var(--spacing);
-        /* background-color:var(--main-color) ; */
-    
-        
     }
 
     #contactForm {

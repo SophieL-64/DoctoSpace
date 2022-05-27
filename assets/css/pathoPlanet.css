@@ -1,12 +1,3 @@
-/* GLOBAL*/
-body{
-  --secondary-color:rgb(236, 138, 10);
-}
-
-p{
-  font-family: var(--main-font-family);
-}
-
 /*HEADER*/
 
 .advice {

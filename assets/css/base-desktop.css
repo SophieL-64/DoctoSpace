@@ -1,0 +1,179 @@
+/**********DESKTOP*****/
+
+    /******GENERIQUE*****
+/*********************/
+
+    /** SECTION NABARRE HEADER**/
+    .destination {
+        position: relative;
+    }
+
+    header>h1 {
+        text-align: center;
+        line-height: 2.5em;
+        font-size: 7rem;
+    }
+
+    header h2 {
+        text-align: center;
+        font-size: 4rem;
+
+    }
+
+    header h3 {
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+    li {
+        display: block;
+    }
+
+    .navMenu {
+        font-weight: 700;
+        color: var(--text-font-color);
+        background-color: var(--main-color);
+        ;
+        margin: 0;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 80px;
+        /* box-shadow: 0 1px 0 #f7f7f7; */
+    }
+
+    .nav .navToggle {
+        display: none;
+    }
+
+    .nav .navMenu {
+        flex-direction: row;
+    }
+
+    .navSousItemdrop {
+        position: relative;
+        top: 5rem;
+        left: 18rem;
+    }
+
+    .navSousItemdrop_active {
+        position: absolute;
+        top: 4rem;
+    }
+
+    .color-slider {
+        background-color: antiquewhite;
+    }
+
+    /******FIN NABARRE HEADER**/
+
+    /******SECTION CONCEPT******/
+    #concept {
+        height: auto;
+        margin-top: -20px;
+    }
+
+    .concept {
+        text-align: center;
+        margin-top: 5rem;
+        line-height: 3rem;
+        width: 100%;
+    }
+
+    /******FIN CONCEPT******/
+
+    /******SECTION SLIDE ****/
+    .slider,
+    .slide {
+        height: 360px;
+    }
+
+    /******FIN SLIDE ******/
+
+    /***TESTIMONIALS******/
+    .flex-container {
+        flex-flow: row wrap;
+        gap: calc(var(--spacing) * 2);
+    }
+
+    /***FIN TESTIMONIALS*******/
+
+    /*****SECTION CONTACT FORMULAIRE*****/
+    #contact {
+        align-items: start;
+        margin: 0;
+        padding: var(--spacing);
+        /* background-color:var(--main-color) ; */
+    }
+
+    #contactForm {
+        margin: calc(var(--spacing) * 2) auto;
+        display: flex;
+        max-width: 600px;
+        flex-flow: column;
+        align-content: start;
+        width: 100%;
+        padding-top: calc(var(--spacing) * 2);
+    }
+
+    #contactForm label {
+        align-self: start;
+    }
+
+    /*****FIN CONTACT FORMULAIRE*****/
+
+    /*****SECTION FOOTER *****/
+    footer {
+        padding: 2rem 6rem;
+        font-size: 1.6rem;
+    }
+
+    #contactForm {
+        margin: calc(var(--spacing)*2) auto;
+        display: flex;
+        max-width: 600px;
+        flex-flow: column;
+        align-content: start;
+        width: 100%;
+        padding-top: calc(var(--spacing)*2);
+    }
+
+    #contactForm label {
+        align-self: start;
+    }
+
+    /*****FIN CONTACT FORMULAIRE*****/
+
+
+    /*****SECTION FOOTER *****/
+    footer {
+        padding: 0rem 6rem;
+        font-size: 1.6rem;
+    }
+
+    footer .social-link {
+        padding: 1rem 1rem;
+    }
+
+    /************************/
+
+    /*****SECTION SCROLLUP *****/
+    #haut {
+        bottom: 30px;
+        right: 20px;
+    }
+
+    /*****FIN  SCROLLUP *****/
+
+    /*****SECTION DARK LIGHT *****/
+    #toggleDarkLight {
+        position: fixed;
+        top: 27px;
+        right: 50px;
+    }
+
+    /*****FIN DARK LIGHT *****/
+
